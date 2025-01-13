@@ -1,0 +1,26 @@
+<m_navbar bg="#f2f3ff" title="{{ title }}" />
+
+<m_popup direction="bottom" show="{{popshow_1}}" />
+<m_popup direction="top" show="{{popshow_2}}" />
+<m_popup direction="left" show="{{popshow_3}}" />
+<m_popup direction="right" show="{{popshow_4}}" />
+
+<view class="_page">
+  <view class="sub-title">1. 从下方弹出</view>
+  <view style="display: flex;justify-content: center;">
+    <m_button bindtap="pop_1" data-d="bottom" size="large" content="下方弹出层" />
+  </view>
+  <view class="sub-title">2. 从上方弹出</view>
+  <view style="display: flex;justify-content: center;">
+    <m_button bindtap="pop_2" data-d="top" size="large" content="上方弹出层" />
+  </view>
+  <view class="sub-title">3. 从左侧弹出</view>
+  <view style="display: flex;justify-content: center;">
+    <m_button bindtap="pop_3" data-d="left" size="large" content="左侧弹出层" />
+  </view>
+  <view class="sub-title">4. 从右侧弹出</view>
+  <view style="display: flex;justify-content: center;">
+    <m_button bindtap="pop_4" data-d="right" size="large" content="右侧弹出层" />
+  </view>
+
+</view>

@@ -1,0 +1,31 @@
+.nav-bar{
+	position: fixed; 
+  width: 100%; 
+  height: var(--navBarHeight);
+  background-color: var(--bg);
+	top: 0; 
+  z-index: 999999;
+  overflow: hidden;
+}
+
+.slot {
+  height: var(--menuHeight); 
+  min-height: var(--menuHeight); 
+  line-height: var(--menuHeight); 
+  left: var(--menuRight); 
+  top: var(--menuTop);
+}
+
+.title {
+  color: var(--color);
+  font-weight: var(--fontWeight);
+  font-size: var(--fontSize);
+}
+
+.nav-bar .slot{
+	width: 65%; 
+	font-size: 14px; 
+  position: absolute; 
+  display: flex;
+  align-items: center;
+}

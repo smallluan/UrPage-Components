@@ -1,0 +1,22 @@
+<m_navbar bg="#f2f3ff" title="{{ title }}" />
+
+<view class="_page">
+	<view class="sub-title">1. 头像骨架屏</view>
+	<view class="my-container">
+		<m_skeleton type="avatar" />
+	</view>
+	<view class="sub-title">2. 图片骨架屏</view>
+	<view class="my-container">
+		<m_skeleton type="image" />
+	</view>
+	<view class="sub-title">3. 段落骨架屏</view>
+	<m_skeleton type="paragraph" />
+	<view class="sub-title">4. 单元格骨架屏</view>
+	<m_skeleton type="cell" />
+	<view class="sub-title">5. 宫格骨架屏</view>
+	<m_skeleton type="grid" />
+	<view class="sub-title">6. 文图骨架屏</view>
+	<m_skeleton type="interduce" />
+</view>
+
+<view class="blank"></view>

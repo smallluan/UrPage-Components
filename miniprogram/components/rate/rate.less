@@ -1,0 +1,40 @@
+.main-box {
+	display: flex;
+	align-items: center;
+}
+
+.star-box {
+	width: fit-content;
+	/* border: 1rpx solid ; */
+	display: flex;
+	
+}
+
+
+.default,
+.active {
+	transition: all ease-in-out .1s;
+	font-size: var(--starSize);
+}
+
+.active {
+	color: var(--activeColor);
+	text-shadow: 5rpx 5rpx 15rpx rgba(0,0,0,0.2);
+	animation: starblink .1s ease-in-out forwards;
+}
+
+@keyframes starblink {
+	0% {
+		scale: 1;
+	}
+	70% {
+		scale: 1.2;
+	}
+	100% {
+		scale: 1;
+	}
+}
+
+.default {
+	color: var(--defaultColor);
+}

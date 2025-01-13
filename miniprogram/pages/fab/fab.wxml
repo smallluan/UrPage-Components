@@ -1,0 +1,21 @@
+<m_navbar bg="#f2f3ff" title="{{ title }}" />
+
+<view class="_page">
+	<view class="main-title">点击切换</view>
+	<view class="sub-title">1. 纯图标</view>
+	<view style="display: flex;justify-content: center;">
+		<m_button bindtap="show_1" content="纯图标" size="large" />
+	</view>
+	<view class="sub-title">2. 纯文字</view>
+	<view style="display: flex;justify-content: center;">
+		<m_button bindtap="show_2" content="纯文字" size="large" />
+	</view>
+	<view class="sub-title">3. 图标 + 文字</view>
+	<view style="display: flex;justify-content: center;">
+		<m_button bindtap="show_3" content="图标 + 文字" size="large" />
+	</view>
+
+	<m_fab wx:if="{{show_1}}" />
+	<m_fab wx:if="{{show_2}}" icon="" content="分享给朋友" />
+	<m_fab wx:if="{{show_3}}" content="分享给朋友" />
+</view>

@@ -1,0 +1,120 @@
+@import '../utils/color.less';
+
+.button {
+  position: relative;
+	transition: all ease-in-out .3s;
+  border: none;
+  &:active {
+    scale: 0.9;
+  }
+}
+
+.disabled,
+.loading {
+	scale: 1 !important;
+	opacity: 0.8;
+}
+
+.loading-icon {
+  animation: loading-rotate .8s linear infinite;
+}
+
+@keyframes loading-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.size-normal,
+.size-small,
+.size-large {
+	display: flex;
+	align-items: center;
+  color: var(--color);
+  background: var(--bg);
+  justify-content: center;
+}
+
+.size-normal {
+	width: 200rpx;
+	height: 70rpx;
+}
+
+.size-small {
+	width: 120rpx;
+	height: 60rpx;
+	font-size: 28rpx;
+}
+
+.size-large {
+	width: 400rpx;
+	height: 80rpx;
+	font-size: 32rpx;
+}
+
+.content {
+	line-height: 32rpx;
+}
+
+.shape-rect {
+	border-radius: 8rpx;
+}
+
+.shape-round {
+	border-radius: 100px;
+}
+
+// 设置的主题颜色优先级高于自定义颜色
+// 因此写在自定义颜色的下面
+
+// 默认主题
+.theme-primary {
+  background: @mainblue;
+  color: white;
+}
+.theme-primary-light {
+  background: @lightblue;
+  color: @mainblue;
+}
+
+// 成功主题
+.theme-success {
+  background: @maingreen;
+  color: white;
+}
+.theme-success-light {
+  background: @lightgreen;
+  color: @maingreen;
+}
+
+// 错误主题
+.theme-error {
+  background: @mainred;
+  color: white;
+}
+.theme-error-light {
+  background: @lightred;
+  color: @mainred;
+}
+// 警告主题
+.theme-warn {
+  background: @mainorange;
+  color: white;
+}
+.theme-warn-light {
+  background: @lightorange;
+  color: @mainorange;
+}
+
+// 纯图标，覆盖以上样式
+.pure-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100rpx;
+  height: 100rpx;
+  font-size: 44rpx;
+}

@@ -1,0 +1,97 @@
+@import './color.less';
+._page {
+  width: 96%;
+  margin-left: 2%;
+  // border: 1rpx solid red
+}
+
+.main-title {
+  margin-top: 40rpx;
+  margin-bottom: 20rpx;
+  font-size: 36rpx;
+  font-weight: 700;
+  color: @mainblue;
+}
+
+.sub-title {
+  margin-top: 30rpx;
+  margin-bottom: 15rpx;
+  font-weight: 600;
+}
+
+.disc {
+  margin-top: 20rpx;
+  margin-bottom: 15rpx;
+  font-size: 30rpx;
+  color: @gray
+}
+
+.flex-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 20rpx;
+}
+
+.flex-item-1-left,
+.flex-item-1-right,
+.flex-item-1-center,
+.flex-item-2-left,
+.flex-item-2-right,
+.flex-item-2-center,
+.flex-item-3-left,
+.flex-item-3-right,
+.flex-item-3-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-item-1-left,
+.flex-item-1-right,
+.flex-item-1-center {
+  width: 100%;
+}
+
+.flex-item-2-left,
+.flex-item-2-right,
+.flex-item-2-center {
+  width: 50%;
+}
+
+.flex-item-3-left,
+.flex-item-3-right,
+.flex-item-3-center {
+  width: 33.33%;
+}
+
+.flex-item-1-left,
+.flex-item-2-left,
+.flex-item-3-left {
+  justify-content: flex-start;
+}
+
+.flex-item-1-right,
+.flex-item-2-right,
+.flex-item-3-right {
+  justify-content: flex-end;
+}
+
+.flex-item-1-center,
+.flex-item-2-center,
+.flex-item-3-center {
+  justify-content: center;
+}
+
+// 页面底部留白
+.blank {
+ height: 300rpx;
+}
+
+.label {
+  padding: 6rpx 24rpx;
+  font-size: 26rpx;
+  background: @lightblue;
+  color: @mainblue;
+  border-radius: 100px;
+}

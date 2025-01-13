@@ -1,0 +1,24 @@
+<m_navbar bg="#f2f3ff" title="{{ title }}" />
+
+<view class="_page">
+  <view class="sub-title">1. 基础菜单</view>
+  <view style="width: 25vw;">
+    <m_dropDownMenu bindonChange="change" list="{{ list_1 }}" />
+  </view>
+  <view class="sub-title">2. 多个菜单</view>
+  <view style="width: 75%;">
+    <m_dropDownMenu bindonChange="change" list="{{ list_2 }}" />
+  </view>
+  <view style="height: 50rpx;"></view>
+  <view style="width: 100%;">
+    <m_dropDownMenu bindonChange="change" list="{{ list_3 }}" />
+  </view>
+  <view class="sub-title">3. 独占一行</view>
+  <view style="width: 100%;">
+    <m_dropDownMenu bindonChange="change" list="{{ list_1 }}" />
+  </view>
+  <view class="sub-title">4. 颜色自定义</view>
+  <view style="width: 100%;">
+    <m_dropDownMenu hightLight="#e3f9e9" activeColor="#2ba471" bindonChange="change" currentId="0" currentOpt="0_1" list="{{ list_3 }}" />
+  </view>
+</view>

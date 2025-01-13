@@ -1,0 +1,1 @@
+<view bindtap="hide" style="z-index: {{zIndex}};" class="mask {{show ? 'show' : 'hide'}}"></view>

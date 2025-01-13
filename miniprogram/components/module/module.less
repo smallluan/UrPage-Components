@@ -1,0 +1,87 @@
+.module {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(0); 
+	padding: 30rpx;
+	width: 560rpx;
+	height: fit-content;
+	z-index: 99999;
+	border-radius: 20rpx;
+	opacity: 0;
+	animation: bigger .6s ease-in-out forwards .1s;
+	background-color: white;
+}
+
+@keyframes bigger {
+	0% {
+			transform: translate(-50%, -50%) scale(0.5); 
+			opacity: 0;
+	}
+	35% {
+			transform: translate(-50%, -50%) scale(1.02);
+			opacity: 0.8;
+	}
+	50% {
+			transform: translate(-50%, -50%) scale(0.9); 
+			opacity: 1;
+	}
+	70% {
+			transform: translate(-50%, -50%) scale(1.01); 
+			opacity: 1;
+	}
+	100% {
+			transform: translate(-50%, -50%) scale(1); 
+			opacity: 1;
+	}
+}
+
+.closeIcon {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	font-size: 42rpx;
+	color: grey;
+}
+
+.title {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	font-weight: 700;
+	font-size: 36rpx;
+	margin-bottom: 12rpx;
+}
+
+.text {
+	color: gray;
+	line-height: 44rpx;
+	margin-bottom: 32rpx;
+}
+
+.comfirm {
+	display: flex;
+  justify-content: center;
+  margin-top: 12rpx;
+}
+
+.concel {
+	display: flex;
+  justify-content: space-around;
+  margin-top: 12rpx;
+}
+
+scroll-view {
+	line-height: 44rpx;
+	height: 500rpx;
+	margin-bottom: 32rpx;
+}
+
+.input {
+	margin-top: -20rpx;
+	margin-bottom: 16rpx;
+	border: 1rpx dashed gray;
+	border-radius: 8rpx;
+}

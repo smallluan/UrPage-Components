@@ -1,0 +1,17 @@
+<view class="good-item-box">
+  <view class="image">
+    <m_lazyImage bottom="{{ bottom }}" lazy="{{ lazy }}" lazy-image="lazy-image" src="{{ good.imgUrl }}" />
+  </view>
+  <!-- <image src="{{ good.imgUrl }}" mode="aspectFill" /> -->
+  <view style="width: 100%;margin-top: 8rpx;display: flex">
+    <text wx:if="{{ good.butie }}" class="butie">{{ good.butie }}</text>
+    <text wx:if="{{ good.pinpai }}" class="pinpai">{{ good.pinpai }}</text>
+    <text wx:if="{{ good.zhijiang }}" class="zhijiang">直降{{ good.zhijiang }}</text>
+  </view>
+  <text class="detail">{{ good.detail}}</text>
+  <view style="width: 100%;margin-top: 8rpx;">
+    <text class="newPrice">￥{{ good.newPrice }}</text>
+    <text wx:if="{{ good.oldPrice }}" class="oldPrice">￥{{ good.oldPrice }}</text>
+    <text class="saled">销量 {{ good.saled }}</text>
+  </view>
+</view>

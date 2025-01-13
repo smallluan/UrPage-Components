@@ -1,0 +1,32 @@
+<view wx:if="{{show}}" class="module">
+	<t-icon bindtap="close" wx:if="{{closeable}}" name="close" class="closeIcon"/>
+	<view wx:if="{{title}}" class="title">{{title}}</view>
+	<text decode wx:if="{{!longText && content}}" class="text">{{content}}</text>
+	<scroll-view wx:if="{{longText && content}}" scroll-y="true">
+	 <text decode>{{content}}</text>
+	</scroll-view>
+	<!-- 输入框 start -->
+	<m_input 
+		wx:if="{{input.show}}" 
+		maxlength="{{input.maxlength}}" 
+		clearable="{{input.clearable}}"
+		placeholder="{{input.placeholder}}" 
+    bindgetContent="getInputContent"
+		class="input" 
+    id="inp"
+	/>
+	<!-- 输入框 end -->
+	<slot></slot>
+	<!-- 按钮 start -->
+	<view class="comfirm" wx:if="{{btn === 'confirm'}}">
+		<m_button bindtap="close" content="知道了" size="large"/>
+	</view>
+	<view class="concel" wx:if="{{btn === 'concel'}}">
+		<m_button bindtap="cancle" theme="primary-light" content="取消"/>
+		<m_button bindtap="confirm" content="确认"/>
+	</view>
+	<!-- 按钮 end -->
+</view>
+
+
+<m_mask hideable="{{false}}" show="{{show}}"/>

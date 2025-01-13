@@ -1,0 +1,14 @@
+<m_navbar bg="#f2f3ff" title="{{ title }}"/>
+<view class="_page">
+  <view class="main-title">一、 行内代码</view>
+  <view class="inline-code">这是行内代码<m_code code="hello world" type="inline"/></view>
+  <view class="inline-code">也可以高亮显示<m_code code="console.log('hello world')" inlineHighLight lang="js" type="inline"/></view>
+  <view class="main-title">二、 代码块</view>
+  <view class="inline-code">当内容超出范围时，可以试着<m_code code="上下或者左右滑动" type="inline"/>。</view>
+  <view class="sub-title">1. javaScript</view>
+  <m_code code="{{ codeJs }}" type="block" lang="js" />
+  <view class="sub-title">2. xml</view>
+  <m_code code="{{ codeHtml }}" type="block" lang="html" />
+</view>
+
+<view class="blank"></view>

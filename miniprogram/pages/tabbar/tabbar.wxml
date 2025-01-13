@@ -1,0 +1,15 @@
+<m_navbar bg="#f2f3ff" title="{{ title }}" />
+<view class="_page">
+	<view class="main-title">一. 基础样式</view>
+	<view class="sub-title">1. 矩形边框</view>
+	<m_tabbar m-tabbar="m-tabbar" tabbarList="{{ tabbarList_1 }}" current="0" shape="rect" />
+	<view class="sub-title">2. 胶囊样式</view>
+	<m_tabbar m-tabbar="m-tabbar" tabbarList="{{ tabbarList_1 }}" current="1" shape="capsule" />
+	<view class="main-title">二. 带徽标</view>
+	<m_tabbar m-tabbar="m-tabbar" tabbarList="{{ tabbarList_2 }}" current="0" shape="rect" />
+	<view class="main-title">三. 自定义样式</view>
+	<m_tabbar m-tabbar="m-tabbar" tabbarList="{{ tabbarList_3 }}" current="0" bg="#e3f9e9"
+	color="#2ba471" shape="rect" />
+</view>
+
+

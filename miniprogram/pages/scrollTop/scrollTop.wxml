@@ -1,0 +1,18 @@
+<m_navbar id="navbar" bg="#f2f3ff" title="{{ title }}" />
+
+
+<view style="height: 50rpx;"></view>
+<m_skeleton type="cell"/>
+<view style="height: 30rpx;"></view>
+<m_skeleton type="paragraph"/>
+<view style="height: 30rpx;"></view>
+<m_skeleton type="cell"/>
+<view style="height: 30rpx;"></view>
+<m_skeleton type="paragraph"/>
+<view style="height: 30rpx;"></view>
+<m_skeleton type="grid"/>
+<m_skeleton type="interduce"/>
+<m_skeleton type="interduce"/>
+<m_skeleton type="interduce"/>
+<m_scrollTop content="回顶" wx:if="{{backtopShow}}"/>
+<view size="large" style="height: 300rpx;"></view>

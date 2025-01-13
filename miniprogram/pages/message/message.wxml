@@ -1,0 +1,40 @@
+<m_navbar bg="#f2f3ff" title="{{ title }}" />
+<m_message bindmsgClose="close_1" wx:if="{{show_1}}" content="该消息5s后消失" type="normal" />
+<m_message bindmsgClose="close_2" wx:if="{{show_2}}" content="点击右侧关闭" btn="{{true}}" type="normal" />
+<m_message bindmsgClose="close_3" wx:if="{{show_3}}" content="右侧带有跳转链接" link='/pages/linkTest/linkTest' btn="{{true}}" type="normal" />
+<m_message bindmsgClose="close_4" wx:if="{{show_4}}" content="这是一条成功通知" btn="{{true}}" type="success" />
+<m_message bindmsgClose="close_5" wx:if="{{show_5}}" content="这是一条错误通知" btn="{{true}}" type="error" />
+<m_message bindmsgClose="close_6" wx:if="{{show_6}}" content="这是一条警告通知" btn="{{true}}" type="warning" />
+<view class="_page">
+  <view class="main-title">一. 基础通知</view>
+  <view class="sub-title">1. 5s 后自动消失</view>
+  <view style="display: flex;justify-content: center;">
+    <m_button size="large" content="5秒后消失" bindtap="show_1" />
+  </view>
+
+  <view class="sub-title">2. 可手动关闭，5s 后自动消失</view>
+  <view style="display: flex;justify-content: center;">
+    <m_button size="large" content="可手动关闭" bindtap="show_2" />
+  </view>
+
+  <view class="sub-title">3. 携带链接的消息</view>
+  <view style="display: flex;justify-content: center;">
+    <m_button size="large" content="带链接的消息" bindtap="show_3" />
+  </view>
+
+  <view class="main-title">二. 类型通知</view>
+  <view class="sub-title">1. 成功主题提示</view>
+  <view style="display: flex;justify-content: center;">
+    <m_button bg="#2ba471" size="large" content="成功主题提示" bindtap="show_4" />
+  </view>
+
+  <view class="sub-title">2. 错误主题提示</view>
+  <view style="display: flex;justify-content: center;">
+    <m_button bg="#d54941" size="large" content="错误主题提示" bindtap="show_5" />
+  </view>
+
+  <view class="sub-title">3. 警告主题提示</view>
+  <view style="display: flex;justify-content: center;">
+    <m_button bg="#e37318" size="large" content="警告主题提示" bindtap="show_6" />
+  </view>
+</view>

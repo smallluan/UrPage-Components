@@ -1,0 +1,54 @@
+<m_navbar bg="#f2f3ff" title="{{ title }}" />
+
+<view class="_page">
+  <view class="sub-title">具体使用示例请看首页</view>
+  <view class="main-title">一. 基础面板</view>
+  <view class="sub-title">1. 基础面板</view>
+  <m_collapse cell="{{cell_1}}">
+    <view class="inner" slot="inner">
+      <text decode>&emsp;&emsp;{{ text }}</text>
+    </view>
+  </m_collapse>
+  <view class="sub-title">2. 向上打开</view>
+  <m_collapse direction="top" cell="{{cell_2}}">
+    <view class="inner" slot="inner">
+      <text decode>&emsp;&emsp;{{ text }}</text>
+    </view>
+  </m_collapse>
+  <view class="sub-title">3. 初始高度</view>
+  <m_collapse origHeight="100rpx" cell="{{cell_3}}">
+    <view class="inner" slot="inner">
+      <text decode>&emsp;&emsp;{{ text }}</text>
+    </view>
+  </m_collapse>
+
+  <view class="main-title">二. 功能面板</view>
+  <view class="sub-title">1. 手风琴面板</view>
+  <m_collapseGroup wx:key="index" cellList="{{cellList}}">
+    <view class="inner" wx:key="index" wx:for="{{3}}" slot="inner{{index}}">
+      <text decode>&emsp;&emsp;{{ text }}</text>
+    </view>
+  </m_collapseGroup>
+
+  <view class="sub-title">2. 向上打开手风琴面板</view>
+  <m_collapseGroup direction='top' wx:key="index" cellList="{{cellList}}">
+    <view class="inner" wx:key="index" wx:for="{{3}}" slot="inner{{index}}">
+      <text decode>&emsp;&emsp;{{ text }}</text>
+    </view>
+  </m_collapseGroup>
+
+  <view class="sub-title">3. 带图标</view>
+  <m_collapse cell="{{cell_4}}">
+    <view class="inner" slot="inner">
+      <text decode>&emsp;&emsp;{{ text }}</text>
+    </view>
+  </m_collapse>
+  <view class="sub-title">4. 带描述</view>
+  <m_collapse cell="{{cell_5}}">
+    <view class="inner" slot="inner">
+      <text decode>&emsp;&emsp;{{ text }}</text>
+    </view>
+  </m_collapse>
+  <view size="large" style="height: 300rpx;"></view>
+
+</view>

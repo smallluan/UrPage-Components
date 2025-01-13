@@ -1,0 +1,13 @@
+<m_navbar bg="#f2f3ff" title="{{ title }}"/>
+<view class="_page">
+	<view class="sub-title">1. 纯文字</view>
+	<m_navbar positionHolder="{{ false }}" back="{{ false }}" m-navbar="m-navbar" bg="#f2f3ff" title="{{ title_1 }}"/>
+	<view class="sub-title">2. 可返回</view>
+	<m_navbar positionHolder="{{ false }}" m-navbar="m-navbar" bg="#f2f3ff" title="{{ title_1 }}"/>
+	<view class="sub-title">3. 插槽</view>
+	<m_navbar positionHolder="{{ false }}" back="{{ false }}" m-navbar="m-navbar" bg="#f2f3ff">
+		<m_search shape="round" icon="search" placeholder="搜点什么吧" disabled />
+	</m_navbar>
+	<view class="sub-title">4. 自定义</view>
+	<m_navbar positionHolder="{{ false }}" m-navbar="m-navbar" bg="#e3f9e9" title="{{ title_2 }}"/>
+</view>

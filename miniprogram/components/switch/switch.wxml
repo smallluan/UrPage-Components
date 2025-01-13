@@ -1,0 +1,8 @@
+<view style="{{mainStyles}}" bindtap="tap" class="{{mainClass}} {{size}}">
+	<view class="bg{{status ? '-active' : ''}}"></view>
+	<view class="slider{{status ? '-active' : ''}}">
+		<t-icon class="loading icon" name="loading" wx:if="{{loading}}"/>
+		<t-icon class="inner icon" name="{{currIcon}}" wx:if="{{!loading && icon[0]!=''}}"/>
+		<view class="inner" wx:if="{{!loading && icon[0] ==''}}">{{currText}}</view>
+	</view>
+</view>

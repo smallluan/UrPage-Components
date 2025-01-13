@@ -1,0 +1,82 @@
+.mainBox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--bg);
+  position: relative;
+  z-index: 999;
+}
+
+.tabsBox {
+  display: flex;
+  position: relative;
+  margin: 15rpx 0 15rpx 2%;
+  width: 96%;
+}
+
+.scroll {
+  justify-content: space-between;
+  align-items: center;
+  white-space:nowrap;
+  height: 50rpx;
+}
+
+.scroll-each-container {
+  display: inline-block;
+  border: 1rpx solid red
+}
+
+._scroll-each-container {
+  display: flex;
+  width: var(--ewd);
+}
+
+.cursor {
+  margin-left: var(--pos);
+  margin-top: 0rpx;
+  transform: translateX(-50%);
+  width: 40rpx;
+  height: 6rpx;
+  background: var(--color);
+  border-radius: 100rpx;
+}
+
+.tab,
+.tab-disabled,
+.tab-selected {
+  position: relative;
+  display: flex;
+  padding: 12rpx 0;
+  width: var(--ewd);
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  z-index: 10;
+}
+
+.tab-selected {
+  color: var(--color);
+}
+
+.tab-disabled {
+  opacity: 0.6;
+}
+
+.bgHightLight {
+  position: absolute;
+  margin-left: var(--pos);
+  transform: translateX(-50%); /*抵消掉自身长度对位置的影响*/
+  width: var(--ewd);
+  height: 100%;
+  background-color: var(--bghl);
+  border-radius: 10rpx;
+}
+
+.icon {
+  margin-right: 12rpx;
+  font-size: 38rpx;
+}
+
+.animation {
+  transition: all ease-in-out 300ms;
+}

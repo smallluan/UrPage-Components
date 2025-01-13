@@ -1,0 +1,41 @@
+<m_navbar wx:if="{{ !searchVisible }}" bg="orange" back="{{ false }}">
+  <view class="search">
+    <m_search disabled btnProps="{{ searchBtnProps }}" shape="round" icon='search' />
+  </view>
+</m_navbar>
+
+<m_navbar id="navbar" wx:if="{{ searchVisible }}" bg="orange" title="{{ title }}" back="{{ false }}">
+  <view class="top-bar-sub-title">多快好省</view>
+</m_navbar>
+
+<view class="top-search-box">
+  <view class="search">
+    <m_search id="search" disabled btnProps="{{ searchBtnProps }}" shape="round" icon='search' btn />
+  </view>
+  <view class="top-options" wx:for="{{ topOptions }}">
+    <view class="each-option">
+      <t-icon style="font-size: 34rpx;" name="{{ item.icon }}" />
+      <view>{{ item.name }}</view>
+    </view>
+  </view>
+</view>
+
+<m_sticky>
+  <m_tabs id="tabs" color="orange" selectedHigthLight="{{ tabsHeightLight }}" tabsList="{{ tabs }}" />
+</m_sticky>
+
+<view class="_page">
+  <grid-view main-axis-gap="10rpx" cross-axis-gap="20rpx" type="masonry">
+    <view wx:key="index" wx:for="{{ goodsList }}">
+      <m_goodsItem id="goods{{index}}" good="{{ item }}" />
+    </view>
+  </grid-view>
+</view>
+
+<m_loading zIndex="999999999" bg="orange" wx:if="{{ isGettingGoods}}" />
+
+<view id="tabbar">
+  <m_tabbar color="orange" mode="demo" tabbarList="{{ tabbarList }}" current="0" shape="capsule" />
+</view>
+
+<view class="blank"></view>

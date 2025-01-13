@@ -1,0 +1,24 @@
+<m_navbar id="navbar" bg="#f2f3ff" title="{{ title }}" />
+
+<view class="_page">
+	<view class="main-title">一. 线形进度条</view>
+	<m_progress shape="line" progress="{{ progress }}" />
+	<view class="main-title"></view>
+	<m_progress shape="line" progress="{{ progress }}" activeColor="#d54941" />
+	<view class="main-title"></view>
+	<m_progress shape="line" progress="{{ progress }}" activeColor="#2ba471" />
+	<view class="main-title"></view>
+	<view class="main-title">二. 环形进度条</view>
+	<view class="flex-box">
+		<view class="flex-item-3-left">
+			<m_progress progress="{{ progress }}" />
+		</view>
+		<view class="flex-item-3-center">
+			<m_progress progress="{{ progress }} " activeColor="#d54941" />
+		</view>
+		<view class="flex-item-3-right">
+			<m_progress progress="{{ progress }}" activeColor="#2ba471" />
+		</view>
+	</view>
+</view>
+<view class="blank"></view>

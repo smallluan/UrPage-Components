@@ -1,0 +1,47 @@
+.shape-bubble,
+.shape-dot,
+.shape-round {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(75%, -50%);
+  z-index: 100;
+}
+
+.shape-round {
+  display: inline-block;
+  color: var(--color);
+  background: var(--bg);
+  padding: 4rpx 20rpx;
+  border-radius: 20rpx;
+  font-size: 22rpx;
+}
+
+.shape-dot {
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 50%;
+  background: var(--bg);
+}
+
+.shape-bubble {
+  display: inline-block;
+  color: var(--color);
+  background: var(--bg);
+  padding: 4rpx 20rpx;
+  border-radius: 20rpx;
+  font-size: 22rpx;
+  border-radius: 100px 100px 100px 0;
+}
+
+.size-normal {
+  zoom: 1
+}
+
+.size-small {
+  zoom: 0.85
+}
+
+.size-large {
+  zoom: 1.1
+}

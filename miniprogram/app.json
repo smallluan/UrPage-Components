@@ -1,0 +1,106 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/action/action",
+    "pages/popup/popup",
+    "pages/rate/rate",
+    "pages/message/message",
+    "pages/slider/slider",
+    "pages/scrollTop/scrollTop",
+    "pages/textArea/textArea",
+    "pages/fab/fab",
+    "pages/sticky/sticky",
+    "pages/navbar/navbar",
+    "pages/tabbar/tabbar",
+    "pages/pda/pda",
+    "pages/tabs/tabs",
+    "pages/lazyimage/lazyimage",
+    "pages/guide/guide",
+    "pages/codes/codes",
+    "pages/badge/badge",
+    "pages/stepper/stepper",
+    "pages/cell/cell",
+    "pages/pages/dianshang/home/home",
+    "pages/somePages/somePages",
+    "pages/about/about",
+    "pages/link/link",
+    "pages/button/button",
+    "pages/module/module",
+    "pages/logs/logs",
+    "pages/pages/dianshang/cate/cate",
+    "pages/color/color",
+    "pages/mask/mask",
+    "pages/loading/loading",
+    "pages/dropDownMenu/dropDownMenu",
+    "pages/countDown/countDown",
+    "pages/collapse/collapse",
+    "pages/skeleton/skeleton",
+    "pages/footer/footer",
+    "pages/switch/switch",
+    "pages/input/input",
+    "pages/progress/progress",
+    "pages/search/search"
+
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "UrPage 组件库",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationStyle": "custom"
+  },
+  "usingComponents": {
+    "t-icon": "components/icon/icon",
+    "m_tabs": "components/tabs/tabs",
+    "m_navbar": "components/navBar/navBar",
+    "m_link": "components/link/link",
+    "m_button": "components/button/button",
+    "m_collapse": "components/collapseBox/collapseBox",
+    "m_collapseGroup": "components/collapseGroup/collapseGroup",
+    "m_cell": "components/cell/cell",
+    "m_module": "components/module/module",
+    "m_sticky": "components/sticky/sticky",
+    "m_search": "components/search/search",
+    "m_tabbar": "components/tabbar/tabbar",
+    "m_loading": "components/loading/loading",
+    "m_mask": "components/mask/mask",
+    "m_guide": "components/guide/guide",
+    "m_goodsItem": "components/goodsItem/goodsItem",
+    "m_dropDownMenu": "components/dropDownMenu/dropDownMenu",
+    "m_countDown": "components/countDown/countDown",
+    "m_switch": "components/switch/switch",
+    "m_badge": "components/badge/badge",
+    "m_code": "components/codes/codes",
+    "m_footer": "components/footer/footer",
+    "m_scrollCell": "components/scrollCell/scrollCell",
+    "m_lazyImage": "components/lazyImage/lazyImage",
+    "m_skeleton": "components/skeleton/skeleton",
+    "m_stepper": "components/stepper/stepper",
+    "m_pda": "components/pageDataAnalyes/pageDataAnalyes",
+    "m_progress": "components/progress/progress",
+    "m_input": "components/input/input",
+    "m_textarea": "components/textArea/textArea",
+    "m_fab": "components/fab/fab",
+    "m_scrollTop": "components/scrollTop/scrollTop",
+    "m_slider": "components/slider/slider",
+    "m_message": "components/message/message",
+    "m_rate": "components/rate/rate",
+    "m_popup" : "components/popup/popup",
+    "m_actions" : "components/action/action"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index"
+      },
+      {
+        "pagePath": "pages/somePages/somePages"
+      },
+      {
+        "pagePath": "pages/about/about"
+      }
+    ]
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

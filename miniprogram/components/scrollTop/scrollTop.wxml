@@ -1,0 +1,1 @@
+<m_fab bindtap="scrollTop" content="{{content}}" icon="backtop" color="{{color}}" bg="{{bg}}"/>

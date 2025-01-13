@@ -1,0 +1,17 @@
+<view style="--offset: {{ offset }}px" class="scroll-cell-box" bindtouchstart="touchstart" bindtouchmove="touchmove" bindtouchend="touchend">
+  <view class="cell {{ isEnd ? 'animation' : '' }}">
+    <m_cell
+      leftIcon="{{ leftIcon }}"
+      title="{{ title }}"
+      underLine="{{ underLine }}"
+      description="{{ description }}"
+      color="{{ color }}"
+      bg="{{ bg }}"
+    >
+      <t-icon size="40rpx" name="chevron-right" slot="right"></t-icon>
+    </m_cell>
+  </view>
+  <view  id="options" class="options-box">
+    <slot></slot>
+  </view>
+</view>

@@ -1,0 +1,75 @@
+<m_navbar bg="#f2f3ff" title="{{ title }}" />
+
+<view class="_page">
+  <view class="sub-title">1.基础徽标</view>
+  <view class="flex-box">
+    <view class="flex-item-3-center">
+      <view class="box">
+        <m_badge />
+      </view>
+    </view>
+    <view class="flex-item-3-center">
+      <view class="box">
+        <m_badge size="small" text="10" shape="round" />
+      </view>
+    </view>
+    <view class="flex-item-3-center">
+      <view class="box">
+        <m_badge size="small" text="New" shape="bubble" />
+      </view>
+    </view>
+  </view>
+  <view class="sub-title">2.在其他组件上使用</view>
+  <view style="height: 20rpx;"></view>
+  <m_button content="确认" theme="primary-light">
+    <m_badge slot="badge" text='New' />
+  </m_button>
+  <view style="height: 20rpx;"></view>
+  <m_tabs bg="#f3f3f3" selectedHigthLight="{{ tabsHeightLight }}" tabsList="{{ tabs }}" />
+  <view class="sub-title">3.颜色自定义</view>
+  <view style="height: 20rpx;"></view>
+  <view class="box">
+    <m_badge text="秒杀" color="white" bg="orangered" />
+  </view>
+  <view style="height: 20rpx;"></view>
+  <view class="box">
+    <m_badge text="18" color="white" bg="#2ba471" />
+  </view>
+  <view class="sub-title">4.组件尺寸</view>
+  <view style="height: 20rpx;"></view>
+  <view class="flex-box">
+    <view class="flex-item-3-center">
+      <view class="box">
+        <m_badge size="small" text="New" shape="bubble" />
+      </view>
+    </view>
+    <view class="flex-item-3-center">
+      <view class="box">
+        <m_badge size="normal" text="New" shape="bubble" />
+      </view>
+    </view>
+    <view class="flex-item-3-center">
+      <view class="box">
+        <m_badge size="large" text="New" shape="bubble" />
+      </view>
+    </view>
+  </view>
+  <view class="sub-title">5.注意</view>
+  <view class="disc">该组件插入其他组件的方式有两种。
+    <view style="height: 20rpx;"></view>
+    <view>
+      1.如果组件中存在数组，如 tabs 则直接在配置对象中添加 badge 配置项。
+      <view style="height: 20rpx;"></view>
+      <m_code code="{{ codejs }}" lang="js" />
+    </view>
+    <view>
+      <view style="height: 20rpx;"></view>
+      2.其余情况，如 button 不存在数组，则使用<m_code code="插槽"type="inline" />添加。
+      <view style="height: 20rpx;"></view>
+      <m_code code="{{ codehtml }}" lang="html" />
+    </view>
+  </view>
+  
+</view>
+
+<view class="blank"></view>

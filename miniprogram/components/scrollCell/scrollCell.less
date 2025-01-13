@@ -1,0 +1,26 @@
+.scroll-cell-box {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.cell {
+  width: 750rpx;
+  transform: translateX(var(--offset));
+}
+
+.animation {
+  transition: all .3s ease-in-out;
+}
+
+.options-box {
+  display: flex;
+  width: fit-content;
+  position: absolute;
+  right: 0;
+  height: 100%;
+  top: 0;
+  z-index: -1;
+  overflow: hidden;
+  align-items: center;
+}

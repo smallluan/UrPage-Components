@@ -1,0 +1,11 @@
+<m_mask wx:if="{{show}}" bindmaskShow = "observeMask"/>
+
+<view 
+	wx:for="{{directions}}" 
+	wx:if="{{item === direction}}" 
+	style="--w:{{width}};--h:{{height}}"
+	class="{{classes[0]}} {{show ? classes[1] : classes[2]}}"
+>
+	
+	<slot name="popInner"></slot>
+</view>

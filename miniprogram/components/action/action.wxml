@@ -1,0 +1,19 @@
+<m_popup id="popup" height="35vh" show="{{show}}">
+	<view class="slot" slot="popInner">
+		<view class="topOptions">
+			<view bindtap="concel" class="concel">取消</view>
+			<view class="title">{{title}}</view>
+			<view bindtap="confirm" class="confirm">确认</view>
+		</view>
+		<view wx:if="{{type === 'btn'}}" wx:for="{{btns}}" wx:key="index" class="item">
+			<m_button 
+				bindtap="btnClick" 
+				data-id="{{index}}" 
+				content="{{item.content}}" 
+				theme="{{item.theme}}"
+				size="large"
+			/>
+		</view>
+		<slot wx:if="{{type === 'slot'}}" name="innerAction"></slot>
+	</view>
+</m_popup>

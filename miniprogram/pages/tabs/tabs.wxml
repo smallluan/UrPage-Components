@@ -1,0 +1,33 @@
+<m_navbar bg="#f2f3ff" title="{{ title }}"/>
+
+<view class="_page">
+<view class="main-title">一. 基础选项卡</view>
+<view class="sub-title">1. 光标选项卡</view>
+<m_tabs tabsList="{{tab1}}"/>
+<m_tabs tabsList="{{tab2}}"/>
+<m_tabs tabsList="{{tab3}}"/>
+
+<view class="sub-title">2. 背景高亮</view>
+<m_tabs tabsList="{{tab1}}" cursor="{{false}}" selectedHigthLight = "{{showhl}}"/>
+<m_tabs tabsList="{{tab2}}" cursor="{{false}}" selectedHigthLight = "{{showhl}}"/>
+<m_tabs tabsList="{{tab3}}" cursor="{{false}}" selectedHigthLight = "{{showhl}}"/>
+
+<view class="main-title">二. 功能选项卡</view>
+<view class="sub-title">1. 元素禁用</view>
+<m_tabs tabsList="{{tab4}}"/>
+<view class="sub-title">2. 图标选项卡</view>
+<m_tabs tabsList="{{tab5}}"/>
+
+<view class="main-title">三. 自定义样式</view>
+<view class="sub-title">1. 选中颜色</view>
+<m_tabs tabsList="{{tab5}}" color="#2ba471"/>
+<m_tabs tabsList="{{tab5}}" color="#e37318"/>
+<m_tabs tabsList="{{tab5}}" color="#d54941"/>
+
+<view class="sub-title">2. 高亮颜色</view>
+<m_tabs tabsList="{{tab5}}" color="#2ba471" selectedHigthLight = "{{showhl1}}"/>
+<m_tabs tabsList="{{tab5}}" color="#e37318" selectedHigthLight = "{{showhl2}}"/>
+<m_tabs tabsList="{{tab5}}" color="#d54941" selectedHigthLight = "{{showhl3}}"/>
+
+<view class="blank"></view>
+</view>

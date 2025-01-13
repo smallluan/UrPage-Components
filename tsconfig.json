@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "strictNullChecks": true,
+    "noImplicitAny": true,
+    "module": "CommonJS",
+    "target": "ES2020",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "alwaysStrict": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strict": true,
+    "strictPropertyInitialization": true,
+    "lib": ["ES2020"],
+    "typeRoots": [
+      "./typings"
+    ]
+  },
+  "include": [
+    "./**/*.ts"
+, "miniprogram/components/button/props.js", "miniprogram/components/tabs/tabs.js", "miniprogram/components/guide/guide.js", "miniprogram/pages/color/color.js", "miniprogram/components/button/button.js", "miniprogram/pages/index/index.js", "miniprogram/components/codes/codes.js", "miniprogram/components/scrollCell/scrollCell.js", "miniprogram/components/lazyImage/lazyImage.js", "miniprogram/components/stepper/stepper.js", "miniprogram/components/reinit/reinit.js", "miniprogram/components/pageDataAnalyes/pageDataAnalyes.js", "miniprogram/components/pageDataItem/pageDataItem.js", "miniprogram/components/progress/progress.tjs", "miniprogram/components/slider/slider.js", "miniprogram/components/message/message.js", "miniprogram/pages/action/action.js", "miniprogram/components/action/actio.js", "miniprogram/pages/popup/popup.js", "miniprogram/components/popup/popup.js", "miniprogram/pages/message/message.js"  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

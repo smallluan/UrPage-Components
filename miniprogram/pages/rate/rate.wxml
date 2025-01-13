@@ -1,0 +1,45 @@
+<m_navbar id="navbar" bg="#f2f3ff" title="{{ title }}" />
+
+<view class="_page">
+  <view class="main-title">一. 基础评分</view>
+<view class="sub-title">1. 点击或滑动</view>
+<m_cell title="基础评分">
+	<m_rate slot="right"/>
+</m_cell>
+<view class="sub-title">2. 数量自定义</view>
+<m_cell title="三颗星">
+	<m_rate number = "3" slot="right"/>
+</m_cell>
+<view class="main-title">二. 带描述信息</view>
+<view class="sub-title">1. 评论</view>
+<m_cell title="左边评论">
+	<m_rate current="3" reviews="{{reviews}}" slot="right"/>
+</m_cell>
+<view class="sub-title">2. 表情</view>
+<m_cell title="左边表情">
+	<m_rate current="4" emoji="{{emoji}}" slot="right"/>
+</m_cell>
+<view class="main-title">三. 自定义样式</view>
+<view class="sub-title">1. 颜色自定义</view>
+<m_cell title="选中颜色">
+	<m_rate activeColor="#0052d9" current="3" slot="right"/>
+</m_cell>
+<m_cell title="默认颜色">
+	<m_rate defaultColor="#2ba471" current="3" slot="right"/>
+</m_cell>
+<view class="sub-title">2. 图标自定义</view>
+<m_cell title="点赞图标">
+	<m_rate icon="thumb-up-2" current="3" slot="right"/>
+</m_cell >
+<view class="sub-title">3. 尺寸自定义</view>
+<m_cell title="26px">
+	<m_rate starSize="26" current="3" slot="right"/>
+</m_cell >
+<m_cell title="24px">
+	<m_rate starSize="24" current="3" slot="right"/>
+</m_cell >
+<m_cell title="22px">
+	<m_rate starSize="22" current="3" slot="right"/>
+</m_cell >
+</view>
+<view class="blank"></view>

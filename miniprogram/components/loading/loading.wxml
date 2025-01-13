@@ -1,0 +1,14 @@
+<m_mask zIndex="{{ zIndex }}" catchtap="true" catchtouchmove="true" zIndex="99999" hideable="{{false}}" show="{{show}}"/>
+
+<view style="--bg: {{ bg }}" wx:if="{{show}}" class="loading-container">
+	<!-- 线条风格 -->
+	<view wx:if="{{theme === 'line'}}" class="cursor">
+		<view 
+			class="loading-item" 
+			wx:for="{{3}}" wx:key="index" 
+			style="animation-delay: {{index * 180}}ms;">
+		</view>
+	</view>
+	<!--  -->
+	<view class="text" >{{text}}</view>
+</view>

@@ -1,0 +1,17 @@
+<view wx:if="{{ type === 'block' }}" class="code-area">
+  <scroll-view  scroll-x="true" style="padding: 0;margin: 0;height: fit-content;" >
+    <view class="eachLine" wx:for="{{ _code }}">
+      <view class="lineIndex">{{ index + 1 }}</view>
+      <!-- 每一行 -->
+      <view class="eachLine" >
+        <text style="display: inline-block;width: max-content;" wx:for="{{ item }}" decode wx:for-item="_item" class="{{ _item.class }}">{{ _item.content }}{{ _item.endfix }}</text>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+
+<view class="inline-code" wx:if="{{ type === 'inline' && !inlineHighLight }}">{{ code }}</view>
+
+<view class="inline-code" style="background: #3d3d3d;" wx:if="{{ type === 'inline' && inlineHighLight }}">
+  <text style="display: inline-block;width: max-content;" wx:for="{{ _code[0] }}" decode wx:for-item="_item" class="{{ _item.class }}">{{ _item.content }}{{ _item.endfix }}</text>
+</view>

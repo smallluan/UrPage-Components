@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "m_mask" : "../mask/mask",
+    "m_input" : "../input/input"
+  }
+}

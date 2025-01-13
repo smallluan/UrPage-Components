@@ -1,0 +1,9 @@
+<m_navbar bg="#f2f3ff" title="{{ title }}"/>
+
+<view class="_page">
+  <view class="sub-title">1. 基础页脚</view>
+  <m_footer/>
+  <view class="sub-title">2. 带链接</view>
+  <m_footer link="{{ link }}" />
+</view>
+

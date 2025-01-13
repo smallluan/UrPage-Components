@@ -1,0 +1,18 @@
+<view style="--color:{{color}};--bg:{{bg}}" class="input">
+	<view class="top-input">
+		<t-icon wx:if="{{icon}}" class="icon" name="{{icon}}"/>
+		<text wx:if="{{tip}}" class="tip">{{tip}}</text>
+		<input 
+			value="{{content}}" 
+			bindinput="getContent" 
+			type="{{type}}" 
+			password="{{type == 'password'}}" 
+			maxlength="{{maxlength}}" 
+			disabled="{{disabled}}" 
+			placeholder="{{placeholder}}"
+		/>
+		<t-icon bindtap="clear" wx:if="{{ clearable && content}}" class="colse" name="close"/>
+	</view>
+	<view wx:if="{{discription}}" class="discription">{{discription}}
+	</view>
+</view>

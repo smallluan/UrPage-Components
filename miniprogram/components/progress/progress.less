@@ -1,0 +1,88 @@
+.box-circle {
+	position: relative;
+	width: 200rpx;
+	height: 200rpx;
+	border-radius: 50%;
+	background: white;
+	overflow: hidden;
+}
+
+.box-circle .corver-1,
+.box-circle .corver-2 {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+}
+
+.box-circle .corver-1 {
+	background: var(--activeColor);
+	transform: rotate(var(--deg));
+	transform-origin: right;
+}
+
+.box-circle .corver-2 {
+	background: var(--defaultColor);
+}
+
+.box-circle .corver-2-right {
+	right: 0;
+	background: var(--activeColor);
+}
+
+.box-circle .pannel {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 80%;
+	height: 80%;
+	border-radius: 50%;
+	background: var(--pannelColor);
+	color: var(--activeColor);
+	font-weight: 700;
+}
+
+.box-line {
+	width: 100%;
+	height: 20rpx;
+	background: white;
+	border-radius: 100px;
+}
+
+.box-line .slider {
+	height: 100%;
+	width: var(--len);
+	background: var(--activeColor);
+	border-radius: 100px;
+}
+
+.indecater {
+	margin-left: var(--len);
+	transform: translate(-50%, 0rpx);
+	width: 40rpx;
+}
+
+.indecater .triangle {
+	width: 0;
+	height: 0;
+	border-right: 12rpx solid transparent;
+	border-left: 12rpx solid transparent;
+	border-bottom: 16rpx solid var(--activeColor);
+	margin-left: 23rpx;
+	transform: translate(-50%, 4rpx);
+}
+
+.indecater .progesss {
+	width: 46rpx;
+	height: 46rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--activeColor);
+	font-size: 24rpx;
+	border-radius: 10rpx;
+	color: white
+}

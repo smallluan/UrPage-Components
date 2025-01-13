@@ -1,0 +1,11 @@
+<view style="display: inline-block;">
+  <view 
+	bindtap="nav" 
+	style="{{styles}}" 
+	class="link {{classes}} {{ disabled ? 'disabled' : ''}}"
+>
+	<t-icon wx:if="{{icon}}" class="icon" name="link"/>
+	<text class="{{ underLine ? 'underLine' : '' }}">{{text}}</text>
+</view>
+</view>
+

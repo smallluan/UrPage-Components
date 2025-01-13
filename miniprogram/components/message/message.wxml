@@ -1,0 +1,6 @@
+<view wx:if="{{showMsg}}" style="--top: {{navBarHeight}}px" class="{{boxClass}} {{type}}">
+	<t-icon class="icon" name="{{icon}}"/>
+	<view class="text">{{content}}</view>
+	<m_link  class="link {{linkClass}}"  underLine  text="链接"/>
+	<t-icon wx:if="{{ btn }}" bindtap="close" class="btn" name="close"/>
+</view>

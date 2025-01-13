@@ -1,0 +1,69 @@
+<m_navbar bg="#f2f3ff" title="{{ title }}"/>
+<view class="_page">
+	<view class="sub-title">1. 基础链接</view>
+	<view class="flex-box">
+		<view class="flex-item-3-left">
+			<m_link icon="{{ false }}" />
+		</view>
+		<view class="flex-item-3-center">
+			<m_link />
+		</view>
+		<view class="flex-item-3-right">
+			<m_link underLine />
+		</view>
+	</view>
+	<view class="sub-title">2. 内置主题</view>
+	<view class="flex-box">
+		<view class="flex-item-3-left">
+			<m_link underLine theme="primary" />
+		</view>
+		<view class="flex-item-3-center">
+			<m_link underLine theme="success" />
+		</view>
+		<view class="flex-item-3-right">
+			<m_link underLine theme="warn" />
+		</view>
+		<view class="flex-item-3-left">
+			<m_link underLine theme="error" />
+		</view>
+	</view>
+	<view class="sub-title">3. 链接禁用</view>
+	<view class="flex-item-3-left">
+		<m_link underLine disabled />
+	</view>
+	<view class="sub-title">4. 可选尺寸</view>
+	<view class="flex-box">
+		<view class="flex-item-3-left">
+			<m_link underLine theme="primary" size="small" />
+		</view>
+		<view class="flex-item-3-center">
+			<m_link underLine theme="success" />
+		</view>
+		<view class="flex-item-3-right">
+			<m_link underLine theme="warn" size="large" />
+		</view>
+	</view>
+	<view class="sub-title">5. 自定义能力</view>
+	<view class="disc">a. 颜色</view>
+	<view class="flex-box">
+		<view class="flex-item-3-left">
+			<m_link underLine theme="" color="pink" />
+		</view>
+		<view class="flex-item-3-center">
+			<m_link underLine theme="" color="black" />
+		</view>
+		<view class="flex-item-3-right">
+			<m_link underLine theme=""color="skyblue" />
+		</view>
+	</view>
+	<view class="disc">b. 文字</view>
+	<view class="flex-box">
+		<view class="flex-item-3-left">
+			<m_link underLine text="点我去按钮组件" url="/pages/button/button" />
+		</view>
+	</view>
+
+	<view class="sub-title">6. 注意</view>
+	<view class="disc">a. 内置主题颜色优先级高于自定义颜色，如想自定义颜色，请先清空默认主题。</view>
+</view>
+<view class="blank"></view>

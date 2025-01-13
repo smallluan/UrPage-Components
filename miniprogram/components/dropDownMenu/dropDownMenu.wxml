@@ -1,0 +1,16 @@
+<view style="{{ styles }}" class="main-box">
+  <view wx:for="{{ list }}" wx:key="{{ item.id }}" class="item">
+    <view bindtap="onChange" data-id="{{ item.id }}" class="tipText{{ currentId === item.id ? '-active' : '' }}">{{ item.tipText }}</view>
+    <view wx:if="{{ currentId === item.id }}" class="options">
+      <view style="{{ styles }}" class="triangle"></view>
+      <view wx:if="{{ item.options.length !== 0 }}" class="option-box">
+        <view bindtap="onOpt" wx:for="{{ item.options }}" wx:key="index" wx:for-item="_item" data-id="{{ index }}"   class="each-option{{ _item.isSelect ?'-active' : ''}}">
+          {{ _item.text }}
+        </view>
+      </view>
+      <view class="loading-box" wx:if="{{ item.options.length === 0}}">
+        <t-icon class="loading" name="loading" />
+      </view>
+    </view>
+  </view>
+</view>

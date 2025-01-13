@@ -1,0 +1,10 @@
+<view style="{{styles}}" class="cell {{cellClass}}">
+	<view class="vertical-align top-box">
+		<view class="vertical-align">
+			<t-icon wx:if="{{leftIcon}}" class="leftIcon" name="{{leftIcon}}"/>
+			<text>{{title}}</text>
+		</view>
+		<slot name="right"></slot>
+	</view>
+	<view class="description" wx:if="{{description}}">{{description}}</view>
+</view>

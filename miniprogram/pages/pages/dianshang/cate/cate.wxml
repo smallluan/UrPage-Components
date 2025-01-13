@@ -1,0 +1,5 @@
+<m_navbar bg="transparent" title="{{ title }}" back="{{ false }}">
+  <m_search disabled btnProps="{{ searchBtnProps }}" shape="round" icon='search' btn />
+</m_navbar>
+
+<m_tabbar color="orange" mode="demo" tabbarList="{{ tabbarList }}" current="1" shape="capsule" />

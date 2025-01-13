@@ -1,0 +1,12 @@
+<view class="flex-box">
+  <view wx:if="{{ link.text !== '' }}"  style="margin-bottom: 12rpx;" class="flex-item-1-center font">
+    <m_link size="small" 
+      url="{{ link.url }}" 
+      text="{{ link.text }}" 
+      underLine 
+    />
+  </view>
+  <view class="flex-item-1-center font">
+    {{ text }}
+  </view>
+</view>

@@ -1,0 +1,4 @@
+<view style="--bg:{{bg}};--color:{{color}}" class="btn">		
+	<t-icon name="{{icon}}" class="icon"/>
+	<text wx:if="{{content}}">{{content}}</text>
+</view>

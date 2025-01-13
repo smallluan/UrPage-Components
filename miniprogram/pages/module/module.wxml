@@ -1,0 +1,40 @@
+<m_navbar bg="#f2f3ff" title="{{ title }}"/>
+
+<m_module show="{{show_1}}" />
+<m_module title="标题文字" show="{{show_2}}" />
+<m_module title="标题文字" show="{{show_3}}" btn="confirm" />
+<m_module title="标题文字" show="{{show_4}}" btn="concel" />
+<m_module title="标题文字" show="{{show_5}}" bindmoduleColse="inputMouleClose" input="{{ moduleInput }}" btn="concel" />
+<m_module title="标题文字" longText content="{{longText}}" show="{{show_6}}" btn="concel" />
+
+<m_module title="标题文字"  content="" show="{{show_7}}" btn="concel">
+  <view>这里是自定义插槽，您可以在此处插入<text class="lineCode">其他组件</text>、<text class="lineCode">标签</text>或者<text class="lineCode">自定义功能</text>。</view>
+  <m_link text="点我去按钮组件" url="/pages/button/button" icon underLine/>
+</m_module>
+
+<view class="_page">
+  <view class="disc">请点击下方按钮查看对应的模态窗口~</view>
+  <view wx:for="{{ types }}" wx:key="index" class="flex-box">
+    <view class="flex-item-2-left">
+      <view class="sub-title">{{ index + 1 }}. {{ item }}</view>
+    </view>
+    <view class="flex-item-2-right">
+      <m_button bindtap="show_{{ index + 1 }}" slot="right" content="点击弹出"/>
+    </view>
+  </view>
+  <view class="disc">为了避免开发者在<text class="lineCode">无按钮时未添加其他关闭方式</text>导致窗口无法关闭的情况，该组件右上角的关闭图标未提供隐藏接口。</view>
+  <view class="sub-title">使用的组件：</view>
+  <view class="sub-title">
+    <m_link text="Button 按钮" url="/pages/button/button" icon underLine/>
+  </view>
+  <view class="sub-title">
+    <m_link text="Link 链接" url="/pages/link/link" icon underLine/>
+  </view>
+  <view class="sub-title">
+    <m_link text="Input 输入框" url="/pages/input/input" icon underLine/>
+  </view> 
+  <view class="sub-title">
+    <m_link text="Mask 遮罩层" url="/pages/mask/mask" icon underLine/>
+  </view> 
+</view>
+<view class="blank"></view>

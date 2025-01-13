@@ -1,0 +1,39 @@
+.vertical-align {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.top-box {
+	width: 100%;
+}
+
+.cell {
+  box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 4%;
+	justify-content: flex-start;
+	background: var(--bg);
+	color: var(--color);
+}
+
+.leftIcon {
+	margin-right: 12rpx;
+	font-size: 44rpx;
+}
+
+.underLine {
+	border-bottom: 1rpx solid #f3f3f3
+}
+
+.description {
+	width: 90%;
+	margin-top: 12rpx;
+	font-size: 26rpx;
+	color: gray;
+  white-space: nowrap;  /* 强制不换行 */
+  overflow: hidden;  /* 溢出隐藏 */ 
+  text-overflow: ellipsis;  /* 文字溢出部分用省略号代替 */
+}

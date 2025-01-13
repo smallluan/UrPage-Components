@@ -1,0 +1,20 @@
+<view style="{{ styles }}" class="nav-bar m-navbar">
+  <view class="slot">
+    <t-icon 
+      wx:if="{{ back }}" 
+      bindtap="back" 
+      name="chevron-left" 
+      style="font-size: 50rpx;color: {{ title ? title.color : 'black' }}" 
+    />
+    <view 
+      class="title" 
+      bindtap="{{ back ? 'back' : '' }}" 
+      wx:if="{{ title }}"
+    >
+      {{ title.text }}
+    </view>
+    <slot></slot>
+  </view>
+</view>
+
+<view wx:if="{{ positionHolder }}" style="height:{{navBarHeight}};"></view>

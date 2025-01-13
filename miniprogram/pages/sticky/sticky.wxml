@@ -1,0 +1,25 @@
+<m_navbar bg="#f2f3ff" title="{{ title }}" />
+<view class="_page">
+	<view class="main-title">请上划屏幕</view>
+	<view class="sub-title">1. 吸附至顶端</view>
+	<m_sticky top="0">
+		<m_button content="确认" />
+	</m_sticky>
+	<view size="large" style="height: 100rpx;"></view>
+	<view class="sub-title">2. 吸附至顶端前100px（距离自定义）</view>
+	<m_sticky top="100">
+		<view class="flex-box flex-item-1-center">
+			<m_button content="确认" />
+		</view>
+	</m_sticky>
+	<view size="large" style="height: 100rpx;"></view>
+	<view class="sub-title">3. 在父元素范围内吸顶</view>
+	<view style="width: 400rpx;height: 250rpx;margin-top: 40rpx;border:1rpx dashed; margin-left: 100%;transform: translateX(-100%);display: flex;justify-content: flex-end;">
+		<m_sticky top="100">
+			<view class="flex-box flex-item-1-center">
+				<m_button content="确认" />
+			</view>
+		</m_sticky>
+	</view>
+	<view style="height: 3000rpx;"></view>
+</view>

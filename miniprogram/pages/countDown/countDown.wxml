@@ -1,0 +1,7 @@
+<m_navbar bg="#f2f3ff" title="{{ title }}"/>
+<view class="_page">
+  <view class="sub-title">1. 基础倒计时</view>
+  <view class="flex-box">
+    <m_countDown/>
+  </view>
+</view>

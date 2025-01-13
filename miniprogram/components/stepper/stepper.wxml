@@ -1,0 +1,7 @@
+<view class="{{mainClass}}">
+	<t-icon bindtap="minus" class="icon {{val == min ? 'disabled' : ''}}" name="minus"/>
+	<view class="input">	
+		<input disabled="{{disabled}}" bindinput="getNumber" value="{{val}}" type="number"/>
+	</view>
+	<t-icon bindtap="add" class="icon {{val == max ? 'disabled' : ''}}" name="add"/>
+</view>

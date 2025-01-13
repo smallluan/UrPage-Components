@@ -1,0 +1,3 @@
+<m_collapseBox direction='{{ direction }}' bindtap="handal" wx:for="{{cellList}}" wx:key="index" data-id="{{index}}" id="c_{{index}}" cell="{{item}}">
+	<slot name="inner{{index}}"slot="inner"></slot>
+</m_collapseBox>

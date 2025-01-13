@@ -1,0 +1,17 @@
+<m_navbar bg="#f2f3ff" title="{{ title }}"/>
+<view class="_page">
+	<view class="disc">该组件属于基础组件，核心用法是与嵌入到其他组件中，具体使用场景请参考下方链接：</view>
+	<view wx:for="{{ links }}" class="sub-title">
+		<m_link underLine text="{{ item.text }}" url="{{ item.url }}" />
+	</view>
+	<view class="sub-title"></view>
+	<view class="disc">您也可以点击下方按钮单独展示 mask 遮罩层组件：</view>
+	<view class="sub-title"></view>
+	<view class="flex-box">
+		<view class="flex-item-1-center">
+			<m_button bindtap="onTap" data-d="bottom" content="显示遮罩层" size="large" />
+		</view>
+	</view>
+</view>
+
+<m_mask show="{{ showMask }}" />

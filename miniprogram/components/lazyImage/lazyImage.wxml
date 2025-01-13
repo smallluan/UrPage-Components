@@ -1,0 +1,3 @@
+<view id="img">
+  <image class="lazy-image" mode="aspectFill" src="{{ _src }}"/>
+</view>

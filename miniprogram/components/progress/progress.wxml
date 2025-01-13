@@ -1,0 +1,19 @@
+<view 
+	style="{{ style }}" 
+	class="box-circle" 
+	wx:if="{{ shape  === 'circle' }}"
+>
+	<view wx:if="{{ progress !== 0 }}" class="corver-1"></view>
+	<view class="corver-2 {{ progress >= 50 ? 'corver-2-right' : '' }}"></view>
+	<view class="pannel">{{ progress }}%</view>
+</view>
+
+<view wx:if="{{ shape === 'line' }}">
+<view style="{{ style }}"  class="box-line" >
+	<view class="slider"></view>
+</view>
+<view style="{{ style }}" class="indecater">
+		<view class="triangle"></view>
+		<view class="progesss">{{ progress }}</view>
+	</view>
+</view>

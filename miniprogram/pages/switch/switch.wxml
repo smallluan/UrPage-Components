@@ -1,0 +1,73 @@
+<m_navbar bg="#f2f3ff" title="{{ title }}" />
+
+<view class="_page">
+
+	<view class="main-title">一. 基础开关</view>
+	<view class="sub-title">1. 基础开关</view>
+	<m_cell title="基础开关">
+		<m_switch slot="right" />
+	</m_cell>
+	<view class="sub-title">2. 文字开关</view>
+	<m_cell title="文字开关">
+		<m_switch slot="right" text="{{text}}" />
+	</m_cell>
+	<view class="sub-title">3. 图标开关</view>
+	<m_cell title="图标开关">
+		<m_switch slot="right" icon="{{icon}}" />
+	</m_cell>
+
+	<view class="main-title">二. 震动开关</view>
+	<view class="sub-title">1. 打开震动</view>
+	<m_cell title="打开震动">
+		<m_switch vibration="open" slot="right" status="{{false}}" />
+	</m_cell>
+	<view class="sub-title">2. 关闭震动</view>
+	<m_cell title="关闭震动">
+		<m_switch vibration="close" slot="right" />
+	</m_cell>
+	<view class="sub-title">3. 双程震动</view>
+	<m_cell title="双程震动">
+		<m_switch vibration="both" slot="right" status="{{false}}" />
+	</m_cell>
+
+	<view class="main-title">三. 开关状态</view>
+	<view class="sub-title">1. 禁用开关</view>
+	<m_cell title="禁用开关">
+		<m_switch disabled slot="right" />
+	</m_cell>
+	<m_cell title="禁用开关">
+		<m_switch disabled slot="right" status="{{false}}" />
+	</m_cell>
+	<view class="sub-title">2. 加载开关</view>
+	<m_cell title="加载开">
+		<m_switch loading slot="right" />
+	</m_cell>
+	<m_cell title="加载关">
+		<m_switch loading slot="right" status="{{false}}" />
+	</m_cell>
+
+	<view class="main-title">四. 自定义样式</view>
+	<view class="sub-title">1. 颜色自定义</view>
+	<m_cell title="主题绿色">
+		<m_switch background="{{bg1}}" slot="right" />
+	</m_cell>
+	<m_cell title="主题橙色">
+		<m_switch background="{{bg2}}" slot="right" />
+	</m_cell>
+	<m_cell title="主题红色">
+		<m_switch background="{{bg3}}" slot="right" />
+	</m_cell>
+	<view class="sub-title">2. 尺寸</view>
+	<m_cell title="大尺寸">
+		<m_switch slot="right" />
+	</m_cell>
+	<m_cell title="中尺寸">
+		<m_switch slot="right" />
+	</m_cell>
+	<m_cell title="小尺寸">
+		<m_switch size="small" slot="right" />
+	</m_cell>
+</view>
+
+
+<view class="blank"></view>

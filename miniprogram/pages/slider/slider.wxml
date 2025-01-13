@@ -1,0 +1,42 @@
+<m_navbar bg="#f2f3ff" title="{{ title }}" />
+
+<view class="_page">
+  <view class="main-title">一. 基础滑动选择器</view>
+  <view class="sub-title">1. 单游标</view>
+  <view class="bg">
+    <m_slider />
+  </view>
+  <view class="sub-title">2. 双游标</view>
+  <view class="bg">
+    <m_slider type="both" progressLeft="30" />
+  </view>
+  <view class="sub-title">3. 单游标带示数</view>
+  <view class="bg">
+    <m_slider showValue />
+  </view>
+  <view class="sub-title">4. 双游标带示数</view>
+  <view class="bg">
+    <m_slider type="both" progressLeft="30" showValue />
+  </view>
+
+  <!-- capsule -->
+  <view class="main-title">二. 组件样式</view>
+  <view class="sub-title">1. 胶囊主题</view>
+  <view class="bg">
+    <m_slider type="both" progressLeft="30" theme="capsule" showValue />
+  </view>
+  <view class="sub-title">2. 上下限自定义</view>
+  <view class="bg">
+    <m_slider max="200" min="20" progressLeft="20" progressRight="130" progressLeft="20" theme="capsule" showValue />
+  </view>
+  <view class="sub-title">2. 颜色自定义</view>
+  <view class="bg">
+    <m_slider progressRight="40" color="#2ba471" showValue />
+  </view>
+  <view class="bg">
+    <m_slider max="200" min="20" progressLeft="20" progressRight="130" color="#2ba471" progressLeft="20" theme="capsule" showValue />
+  </view>
+</view>
+
+
+<view class="blank"></view>

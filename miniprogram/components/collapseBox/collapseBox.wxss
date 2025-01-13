@@ -1,0 +1,35 @@
+.table-fold,
+.table-unfold {
+	width: 100%;
+	transition: all ease-in-out .3s;
+	overflow: hidden;
+	background: white;
+}
+
+.table-fold {
+	height: var(--orgh);
+}
+
+.table-unfold {
+	height: var(--h);
+}
+
+.cell {
+	opacity: 1;
+}
+
+.cell-unfold {
+	opacity: 0.6;
+	transition: color ease-in-out .3s;
+}
+
+.arrow,
+.arrow-unfold {
+	font-size: 48rpx;
+	transition: all ease-in-out .3s;
+	color: gray;
+}
+
+.arrow-unfold {
+	transform: rotate(-180deg);
+}

@@ -1,0 +1,23 @@
+<m_navbar bg="#f2f3ff" title="{{ title }}" />
+
+<view class="_page">
+
+	<view class="main-title">一. 基础文本区域</view>
+	<view class="sub-title">1. 基础文本区域</view>
+	<m_textarea />
+	<view class="sub-title">2. 带标题</view>
+	<m_textarea title="标题文字" />
+	<view class="sub-title">3. 高度自动</view>
+	<m_textarea title="标题文字" autoHeight />
+	<view class="main-title">二. 功能文本区域</view>
+	<view class="sub-title">1. 最大字数</view>
+	<m_textarea title="标题文字" maxlength="500" />
+	<view class="sub-title">2. 一键清除</view>
+	<m_textarea title="标题文字" maxlength="500" text="点击左下角图标一键清除文本" clearable />
+	<view class="main-title">三. 组件样式</view>
+	<view class="sub-title">1. 卡片风格</view>
+	<m_textarea title="标题文字" maxlength="500" text="这是卡片风格文字区域" clearable theme="card" />
+	<view class="sub-title">2. 虚线边框</view>
+	<m_textarea title="标题文字" maxlength="500" border clearable />
+	<view size="large" style="height: 300rpx;"></view>
+</view>

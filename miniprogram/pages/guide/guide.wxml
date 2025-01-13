@@ -1,0 +1,31 @@
+<m_navbar id="navbar" bg="#f2f3ff" title="{{ title }}" />
+<m_guide bindfinish="guideFinish" components="{{components}}" startGuide="{{ startGuide }}" wx:if="{{ startGuide }}" />
+<view class="_page">
+  <m_search id="search" icon="search" clearable />
+  <m_tabs tabsList="{{ tabs }}" id="tabs" />
+  <grid-view main-axis-gap="10rpx" cross-axis-gap="20rpx" type="masonry">
+    <view wx:key="index" wx:for="{{ goodsList }}">
+      <m_goodsItem id="goods{{index}}" good="{{ item }}" />
+    </view>
+  </grid-view>
+  <view class="flex-box" style="margin-top: 50rpx;">
+    <view class="flex-item-1-center">
+      <m_button size="large" id="button" bindtap="start" content="开始引导" />
+    </view>
+  </view>
+  <view class="sub-title">使用方法</view>
+  <view class="disc">目标页面 wxml</view>
+  <m_code lang="html" code="{{ wxml }}" />
+  <view class="disc">目标页面 js</view>
+  <m_code lang="js" code="{{ js }}" />
+  <view style="margin-top: 20rpx;">
+    <text decode class="disc">&emsp;&emsp;是的，使用该组件，您只需引入这个组件并且告知这个组件需要引导哪些元素就可以，该组件会</text>
+    <m_code type="inline" code="自动获取页面中目标元素的位置" /><text decode class="disc">并执行对应的操作。</text>
+  </view>
+  <view style="margin-top: 20rpx;">
+    <text decode class="disc">&emsp;&emsp;事实上，该组件会隐式地向使用该组件的页面写入一个方法，并且立即执行这个方法，这个方法在父组件中被调用，用于获取父组件中目标元素的信息。</text>
+  </view>
+  <view class="blank"></view>
+</view>
+
+<m_loading show="{{ !startGuide && !goodsList.length  }}" />

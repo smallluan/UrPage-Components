@@ -1,0 +1,9 @@
+<view style="{{styles}}" class="main-box">
+	<view wx:if="{{reviews.length}}" style="color: gray;">{{reviews[current - 1]}}</view>
+	<view wx:if="{{emoji.length}}" style="font-size: 40rpx;">{{emoji[current - 1]}}</view>
+	<view id="star" bindtouchstart="touchstart" bindtouchend="touchend" bindtouchmove="touchmove" class="star-box">
+		<t-icon bindtap="click" data-id="{{index}}" class="{{eachStarClass[index]}}" wx:key="index" wx:for="{{number}}" name="{{icon}}"/>
+	</view>
+</view>
+
+ 

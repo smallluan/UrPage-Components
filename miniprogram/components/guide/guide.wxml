@@ -1,0 +1,23 @@
+<block wx:if="{{ startGuide }}">
+  <view catchtap="true" catchtouchmove='true' class="under-mask"></view>
+  <view catchtap="true" catchtouchmove='true' style="{{ styles }}" class="high-light">
+    <view class="module" style="{{ styles }}" >
+      <view class="title">{{ currentNode.item.title }} {{ current + 1}} / {{ nodes.length }}</view>
+      <view class="content">{{ currentNode.item.content }}</view>
+      <view class="flex-box btn " wx:if="{{ current !== nodes.length - 1 }}">
+        <view class="flex-item-3-left">
+          <m_button size="small" bindtap="finish" theme="primary-light" content="跳过" />
+        </view>
+        <view class="flex-item-3-center">
+          <m_button size="small" bindtap="back" content="返回" />
+        </view>
+        <view class="flex-item-3-right">
+          <m_button size="small" bindtap="next" content="继续" />
+        </view>
+      </view>
+      <view class="flex-item-1-center">
+        <m_button size="large" content="完成" bindtap="finish" wx:if="{{ current === nodes.length - 1 }}" />
+      </view>
+    </view>
+  </view>
+</block>

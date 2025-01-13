@@ -1,0 +1,99 @@
+.box,
+.box-out {
+  position: fixed;
+  left: 5%; 
+  padding: 2% 4%;
+	width: 82%;
+  height: 60rpx;
+  z-index: 999;
+  opacity: 1;
+  background-color: white;
+  border-radius: 12rpx;
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+  box-shadow: 5rpx 5rpx 5rpx rgba(0,0,0,0.1);
+}
+.box {
+  animation: slideIn 0.5s forwards; 
+}
+
+.box-out {
+  animation: slideOut 0.5s forwards; /*动画结束后保存最后一个关键帧的状态*/
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%); 
+    opacity: 0; 
+  }
+  100% {
+    transform: translateY(0); 
+    opacity: 1; 
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+
+.icon {
+  font-size: 48rpx;
+  margin-right: 24rpx;
+  border-radius: 50%;
+}
+
+.normal {
+  background: #f2f3ff;
+  color: #0052d9;
+}
+
+.success {
+  background: #e3f9e9;
+  color: #2ba471;
+}
+
+.error {
+  background: #fff0ed;
+  color: #d54941;
+}
+
+.warning {
+  background: #fff1e9;
+  color: #e37318;
+}
+
+.text {
+  width: 350rpx;
+  /* border: 1rpx solid red; */
+  white-space: nowrap; 
+  overflow: hidden;    
+  text-overflow: ellipsis; 
+}
+
+.link {
+  /* border: 1rpx solid; */
+  margin-left: 30rpx;
+}
+
+.btn {
+  color: #777777;
+  font-size: 40rpx;
+  margin-left: 30rpx;
+}
+
+.block {
+  visibility: visible;
+}
+
+.none {
+  visibility: hidden;
+}

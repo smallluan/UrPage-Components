@@ -1,0 +1,47 @@
+<m_navbar bg="#f2f3ff" title="{{ title }}" />
+
+<view class="_page">
+  <view class="sub-title">一. 功能色</view>
+  <view size="large" style="height: 30rpx;"></view>
+  <view class="color-container">
+    <!-- 主蓝色 -->
+    <view class="color-box">
+      <view style="z-index: {{mainColorBlue.length - index}};background: {{item.color}};color: {{item.font}};" wx:for="{{mainColorBlue}}" wx:key="index" class="color">{{item.color}}</view>
+    </view>
+    <!-- 主红色 -->
+    <view class="color-box">
+      <view style="z-index: {{mainColorBlue.length - index}};background: {{item.color}};color: {{item.font}};" wx:for="{{mainColorRed}}" wx:key="index" class="color">{{item.color}}</view>
+    </view>
+    <!-- 主橙色 -->
+    <view class="color-box">
+      <view style="z-index: {{mainColorBlue.length - index}};background: {{item.color}};color: {{item.font}};" wx:for="{{mainColorOrange}}" wx:key="index" class="color">{{item.color}}</view>
+    </view>
+    <!-- 主绿色 -->
+    <view class="color-box">
+      <view style="z-index: {{mainColorBlue.length - index}};background: {{item.color}};color: {{item.font}};" wx:for="{{mainColorGreen}}" wx:key="index" class="color">{{item.color}}</view>
+    </view>
+  </view>
+
+  <view class="sub-title">二. 扩展色</view>
+  <view size="large" style="height: 30rpx;"></view>
+  <view class="color-container">
+    <!-- 扩蓝色 -->
+    <view class="color-box">
+      <view style="z-index: {{mainColorBlue.length - index}};background: {{item.color}};color: {{item.font}};" wx:for="{{kuoColorBlue}}" wx:key="index" class="color">{{item.color}}</view>
+    </view>
+    <!-- 扩紫色 -->
+    <view class="color-box">
+      <view style="z-index: {{mainColorBlue.length - index}};background: {{item.color}};color: {{item.font}};" wx:for="{{kuoColorPurple}}" wx:key="index" class="color">{{item.color}}</view>
+    </view>
+    <!-- 扩黄色 -->
+    <view class="color-box">
+      <view style="z-index: {{mainColorBlue.length - index}};background: {{item.color}};color: {{item.font}};" wx:for="{{kuoColorYellow}}" wx:key="index" class="color">{{item.color}}</view>
+    </view>
+    <!-- 扩粉色 -->
+    <view class="color-box">
+      <view style="z-index: {{mainColorBlue.length - index}};background: {{item.color}};color: {{item.font}};" wx:for="{{kuoColorPink}}" wx:key="index" class="color">{{item.color}}</view>
+    </view>
+  </view>
+
+  <view size="large" style="height: 300rpx;"></view>
+</view>

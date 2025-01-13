@@ -1,0 +1,28 @@
+<view class="ani">
+
+<view wx:if="{{type === 'avatar'}}" class="{{type}}"></view>
+<view wx:if="{{type === 'image'}}" class="{{type}}"></view>
+<view wx:if="{{type === 'paragraph'}}" class="{{type}}">
+	<text wx:for="{{3}}" class="line"></text>
+</view>
+<view wx:if="{{type === 'cell'}}" class="{{type}}">
+	<!-- <m_skeleton type="avatar"/> -->
+	<view class="avatar"></view>
+	<view style="width: 80%;">
+		<text wx:for="{{2}}" class="line"></text>
+	</view>
+</view>
+<view wx:if="{{type === 'grid'}}" class="{{type}}">
+	<view wx:for="{{4}}" class="item-grid">
+		<view class="item-grid-top" ></view>
+		<view class="item-grid-bottom"></view>
+	</view>
+</view>
+<view wx:if="{{type === 'interduce'}}" class="{{type}}">
+	<view wx:for="{{4}}" class="item-interduce">
+		<view class="item-interduce-top" ></view>
+		<text wx:for="{{1}}" class="line"></text>
+	</view>
+</view>
+
+</view>

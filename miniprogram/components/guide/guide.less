@@ -1,0 +1,57 @@
+@import '../utils/common.less';
+
+.under-mask {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99999;
+  background: transparent;
+}
+
+.high-light {
+  position: fixed;
+  top: var(--top);
+  left: var(--left);
+  width: var(--width);
+  height: var(--height);
+  z-index: 999999;
+  background: transparent;
+  box-shadow: 0 0 0 20000rpx rgba(0, 0, 0, 0.5);
+  transition: all .5s ease-in-out;
+  border-radius: 4rpx;
+}
+
+.module {
+  position: absolute;
+  top: var(--mtop);
+  bottom: var(--mbottom);
+  right: var(--mright);
+  left: var(--mleft);
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  padding: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 500rpx;
+  height: fit-content;
+  background: white;
+  border-radius: 20rpx;
+  transition: all .5s ease-in-out;
+
+  .title {
+    font-size: 34rpx;
+    font-weight: 700;
+  }
+
+  .content {
+    margin-top: 20rpx;
+    font-size: 30rpx;
+    color: gray;
+    margin-bottom: 30rpx;
+  }
+
+  .btn {
+    margin-bottom: 0;
+  }
+}

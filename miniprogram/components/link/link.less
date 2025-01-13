@@ -1,0 +1,61 @@
+@import '../utils/color.less';
+
+.link {
+	width: fit-content;
+	display: flex;
+	align-items: center;
+	color: var(--color);
+	white-space: nowrap;
+	transition: all .3s ease-in-out;
+	&:active {
+		transform: scale(0.9);
+	}
+}
+
+.icon {
+	margin-right: 12rpx;
+}
+
+.underLine {
+	border-bottom: 1rpx solid;
+}
+
+.size-normal {
+	font-size: 32rpx;
+}
+
+.size-small {
+	font-size: 26rpx;
+}
+
+.size-large {
+	font-size: 34rpx;
+}
+
+.disabled {
+	text-decoration: line-through;
+	color: @gray !important;  // 要么把 disabled 放在最底下， 要么加上 !important
+	border: none;
+	&:active {
+		transform: none;
+	}
+}
+
+/*
+ 内置主题颜色优先级高于自定义颜色
+*/
+.theme-primary {
+	color: @mainblue;
+}
+
+.theme-success {
+	color: @maingreen;
+}
+
+.theme-warn {
+	color: @mainorange;
+}
+
+.theme-error {
+	color: @mainred;
+}

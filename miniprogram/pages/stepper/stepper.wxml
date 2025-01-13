@@ -1,0 +1,35 @@
+<m_navbar bg="#f2f3ff" title="{{ title }}" />
+
+<view class="_page">
+	<view class="main-title">一. 基础类型</view>
+	<view class="sub-title">1. 点击数字可直接输入</view>
+	<m_cell title="基础步进器">
+		<m_stepper slot="right" />
+	</m_cell>
+	<view class="main-title">二. 组件类型</view>
+	<view class="sub-title">1. 设定最值</view>
+	<m_cell title="设定最小值">
+		<m_stepper val="10" min="10" slot="right" />
+	</m_cell>
+	<m_cell title="设定最大值">
+		<m_stepper val="999" min="10" slot="right" />
+	</m_cell>
+	<view class="sub-title">2. 组件禁用</view>
+	<m_cell title="该组件禁用">
+		<m_stepper val="3" min="1" disabled slot="right" />
+	</m_cell>
+
+	<view class="main-title">三. 组件尺寸</view>
+	<m_cell title="大尺寸">
+		<m_stepper size="large" slot="right" />
+	</m_cell>
+	<m_cell title="中尺寸">
+		<m_stepper size="normal" slot="right" />
+	</m_cell>
+	<m_cell title="小尺寸">
+		<m_stepper size="small" slot="right" />
+	</m_cell>
+
+</view>
+
+<view class="blank"></view>

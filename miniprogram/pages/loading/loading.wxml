@@ -1,0 +1,2 @@
+<m_navbar bg="#f2f3ff" title="{{ title }}"/>
+<m_loading/>

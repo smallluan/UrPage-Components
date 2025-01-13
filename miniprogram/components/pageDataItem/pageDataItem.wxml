@@ -1,0 +1,11 @@
+<view style="white-space: nowrap;">
+  <m_collapse cell="{{ cell }}">
+    <view class="inner" slot="inner">
+      <view style="background: rgb(44, 44, 44);" wx:if="{{ pageData.children.length !== 0 }}">
+        <view style="margin-left: 40rpx;">
+          <m_pdi wx:for="{{ pageData.children }}" wx:key="index" pageData="{{ pageData.children[index] }}" />
+        </view>
+      </view>
+    </view>
+  </m_collapse>
+</view>

@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "m_cell" : "../cell/cell",
+    "m_collapseBox" : "../collapseBox/collapseBox"
+  }
+}

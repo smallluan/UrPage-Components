@@ -1,0 +1,16 @@
+<view bindtap="click" style="--color: {{color}}" class="slider-box">
+	<view bindtouchstart="touchStart" bindtouchmove="touchMove" class="slider-bg-{{theme}}">
+		<!-- 左侧游标数值 -->
+		<block wx:if="{{type=='both'}}">
+			<view wx:if="{{showValue}}" style="--left: {{sliderPosLeft}}rpx" class="indecator left">{{progressLeft}}</view>
+			<view style="--left: {{sliderPosLeft}}rpx" class="slider left"></view>
+		</block>
+		<!-- 背景进度条 -->
+		<view style="--len:{{progressLen}};--left: {{sliderPosLeft}}rpx" class="progress-{{theme}}"></view>
+		<!-- 右侧游标数值 -->
+		<block>
+			<view wx:if="{{showValue}}" style="--right: {{sliderPosRight}}rpx" class="indecator right">{{progressRight}}</view>
+			<view style="--right: {{sliderPosRight}}rpx" class="slider right"></view>
+		</block>
+	</view>
+</view>

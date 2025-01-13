@@ -1,0 +1,29 @@
+<view class="tabbar-{{shape}} m-tabbar">
+	<view 
+		style="background-color: {{current == index ? bg : '#f8f8f8'}};" 
+		wx:for="{{tabbarList}}" wx:key="index"
+		data-url="{{item.url}}" 
+		data-id="{{index}}" 
+		bindtap="switch" 
+		class="item" 
+	>
+    <m_badge 
+     wx:if="{{ item.badge }}" 
+     text="{{ item.badge.text}}" 
+     bg="{{ item.badge.bg }}" 
+     color="{{ item.badge.color }}" 
+     shape="{{ item.badge.shape }}" 
+     size="{{ item.badge.size }}" 
+    />
+		<t-icon 
+			style="color: {{current == index ? color : 'gray'}};" 
+			name="{{item.icon}}" 
+			class="icon"
+		/>
+		<view 
+			style="color: {{current == item.id ? '#8290FF' : 'gray'}};"
+		>
+			{{item.name}}
+		</view>
+	</view>
+</view>

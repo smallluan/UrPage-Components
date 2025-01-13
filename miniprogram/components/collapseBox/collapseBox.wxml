@@ -1,0 +1,33 @@
+<view 
+	wx:if="{{direction === 'top'}}"
+	style="--h: {{height}}px;--orgh: {{origHeight}};"  
+	class="{{collapseTableClass}}"
+>
+	<view id="slot">
+		<slot name="inner"></slot>
+	</view>
+</view>
+
+<view class="{{cellClass}}" >
+	<m_cell 
+		bindtap="switchFold" 
+		description="{{cell.description}}" 
+		borderBottom="{{cell.borderBottom}}" 
+		leftIcon="{{cell.leftIcon}}" 
+		title="{{cell.title}}"
+		color="{{cell.color}}"
+		bg="{{cell.bg}}"
+	>
+		<t-icon slot="right" class="{{arrowClass}}" name="chevron-{{ direction === 'top' ? 'up' : 'down' }}"/>
+	</m_cell>
+</view>
+
+<view 
+	wx:if="{{direction === 'bottom'}}"
+	style="--h: {{height}}px;--orgh: {{origHeight}};"  
+	class="{{collapseTableClass}}"
+>
+	<view id="slot">
+		<slot name="inner"></slot>
+	</view>
+</view>

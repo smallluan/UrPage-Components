@@ -1,0 +1,86 @@
+<m_navbar bg="#f2f3ff" title="{{ title }}"/>
+<view class="_page">
+  <view class="sub-title">1. 基础主题</view>
+  <view class="flex-box">
+    <view class="flex-item-3-left">
+      <m_button content="确认"/>
+    </view>
+    <view class="flex-item-3-center">
+      <m_button content="成功" theme="success" />
+    </view>
+    <view class="flex-item-3-right">
+      <m_button content="取消" theme="error" />
+    </view>
+  </view>
+
+  <view class="sub-title">2. 轻快主题</view>
+  <view class="flex-box">
+    <view class="flex-item-3-left">
+      <m_button theme="primary-light" content="确认"/>
+    </view>
+    <view class="flex-item-3-center">
+      <m_button content="成功" theme="success-light" />
+    </view>
+    <view class="flex-item-3-right">
+      <m_button content="取消" theme="error-light" />
+    </view>
+  </view>
+
+  <view class="sub-title">3. 功能按钮</view>
+  <view class="flex-box">
+    <view class="flex-item-3-left">
+      <m_button shape="round" icon='search' content=""/>
+    </view>
+    <view class="flex-item-3-left">
+      <m_button content="搜索" icon="search" />
+    </view>
+    <view class="flex-item-3-right">
+      <m_button content="加载中" loading />
+    </view>
+    <view style="margin-top: 20rpx;" class="flex-item-3-left">
+      <m_button disabled icon='app' content="禁用" />
+    </view>
+  </view>
+
+  <view class="sub-title">4. 自定义能力</view>
+  <view class="disc">a. 圆角</view>
+  <view class="flex-box">
+    <view class="flex-item-3-left">
+      <m_button theme="primary" shape="round" content="确认"/>
+    </view>
+    <view class="flex-item-3-center">
+      <m_button content="成功" shape="round" theme="success" />
+    </view>
+    <view class="flex-item-3-right">
+      <m_button content="取消" shape="round" theme="error" />
+    </view>
+  </view>
+  <view class="disc">b. 尺寸</view>
+  <view class="flex-box">
+    <m_button theme="primary" size="large" content="确认"/>
+  </view>
+  <view class="flex-box">
+    <m_button theme="success" content="成功"/>
+  </view>
+  <view class="flex-box">
+    <m_button theme="error" size="small" content="取消"/>
+  </view>
+  <view class="disc">c. 自定义颜色</view>
+  <view class="flex-box">
+    <view class="flex-item-3-left">
+      <m_button bg="skyblue" color="white" theme='' content="天蓝色"/>
+    </view>
+    <view class="flex-item-3-center">
+      <m_button bg="transparent" color="orangeed" theme='' content="透明色"/>
+    </view>
+    <view class="flex-item-3-right">
+      <m_button bg="purple" content="紫色" theme='' />
+    </view>
+  </view>
+
+  <view class="sub-title">5. 注意</view>
+  <view class="disc">a. 内置主题颜色优先级高于自定义颜色，如想自定义颜色，请先清空默认主题。</view>
+  <view class="disc">b. 图标显示是有条件的，当尺寸为small时不显示图标。当按钮状态为loading时，loading图标会覆盖原图标。</view>
+  <view class="disc">c. 按钮中仅存在图标而不存在描述文字时，按钮尺寸是固定的，无法改变。</view>
+</view>
+<view class="blank"></view>

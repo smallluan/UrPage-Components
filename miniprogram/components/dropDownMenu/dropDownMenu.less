@@ -1,0 +1,105 @@
+@import '../utils/color.less';
+
+.main-box {
+  display: flex;
+  width: 100%;
+  height: 90rpx;
+  background: white;
+  border-radius: 20rpx;
+  .item {
+    position: relative;
+    box-sizing: border-box;
+    padding: 12rpx;
+    flex: 1;
+    border-radius: 20rpx 20rpx 0 0;
+    transition: all .3s ease-in-out;
+    height: inherit;
+    .tipText,
+    .tipText-active {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      border-radius: 8rpx;
+    }
+    .tipText-active {
+      background: var(--hightLight);
+      color: var(--activeColor);
+    }
+  }
+  .options {
+    position: absolute;
+    z-index: 100;
+    top: 110%;
+    width: 100%;
+    margin-left: -12rpx;
+    animation: unfold .3s ease-in-out;
+    .triangle {
+      margin-left: 50%;
+      transform: translateX(-50%);
+      width: 0rpx;
+      height: 0rpx;
+      border-bottom: 16rpx white solid;
+      border-left: 16rpx transparent solid;
+      border-right: 16rpx transparent solid;
+    }
+    .option-box {
+      width: 100%;
+      background: white;
+      border-radius: 12rpx;
+      overflow: hidden;
+      color: black;
+      .each-option,
+      .each-option-active {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 16rpx 12rpx;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        &:not(:last-child) {
+          border-bottom: 1rpx solid @lightgray;
+        }
+      }
+      .each-option-active {
+        color: var(--activeColor);
+      }
+    }
+    .loading-box {
+      width: 100%;
+      height: 200rpx;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: white;
+      border-radius: 12rpx;
+      .loading {
+        animation: rotate .8s linear infinite;
+      }
+    }
+  }
+
+  @keyframes unfold {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    } 
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

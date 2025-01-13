@@ -1,0 +1,3 @@
+<m_navbar bg="#f2f3ff" title="{{ title }}" back="{{ false }}"/>
+
+<m_tabbar tabbarList="{{ tabbarList }}" current="1" shape="capsule" />

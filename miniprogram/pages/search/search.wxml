@@ -1,0 +1,23 @@
+<m_navbar id="navbar" bg="#f2f3ff" title="{{ title }}" />
+
+<view class="_page">
+	<view class="main-title">一. 基础搜索框</view>
+	<view class="sub-title">1. 纯搜索框</view>
+	<m_search />
+	<view class="sub-title">2. 带图标</view>
+	<m_search icon="search" />
+	<view class="sub-title">3. 字数限制</view>
+	<m_search icon="search" placeholder="上限10字" />
+	<view class="main-title">二. 功能搜索框</view>
+	<view class="sub-title">1. 可清除</view>
+	<m_search icon="search" content="点击右侧浮标清除内容" clearable />
+	<view class="sub-title">2. 带按钮</view>
+	<m_search icon="search" btn />
+	<view class="sub-title">3. 搜素框形状</view>
+	<m_search icon="search" btn shape="round" />
+	<view class="sub-title">4. 禁用搜素框</view>
+	<m_search icon="search" btn disabled />
+</view>
+
+
+<view class="blank"></view>

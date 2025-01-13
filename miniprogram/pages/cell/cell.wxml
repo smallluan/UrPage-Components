@@ -1,0 +1,33 @@
+<m_navbar bg="#f2f3ff" title="{{ title }}"/>
+<view class="_page">
+  <view class="sub-title">1. 基础单元格</view>
+  <m_cell title="单元格标题">
+    <t-icon size="40rpx" name="chevron-right" slot="right"></t-icon>
+  </m_cell>
+  <view class="sub-title">2. 图标单元格</view>
+  <m_cell leftIcon="app"  title="图标单元格">
+    <t-icon size="40rpx" name="chevron-right" slot="right"></t-icon>
+  </m_cell>
+  <view class="sub-title">3. 带描述单元格</view>
+  <m_cell leftIcon="app" description="这里是描述信息这里是描述信息"  title="描述单元格">
+    <t-icon size="40rpx" name="chevron-right" slot="right"></t-icon>
+  </m_cell>
+  <view class="sub-title">4. 右侧插槽自定义</view>
+  <m_cell leftIcon="app"  title="插槽单元格">
+    <m_button slot="right" content="确认" size="small" />
+  </m_cell>
+  <m_cell leftIcon="app"  title="插槽单元格">
+    <m_switch slot="right" size="small" />
+  </m_cell>
+  <view class="sub-title">5. 滑动单元格<text class="label">New</text></view>
+  <m_scrollCell leftIcon="app" title="请向左滑动">
+    <view class="flex-box flex-item-1-center" style="width: 200rpx;color: white;background: #d54941;;height: 100%;" >删除</view>
+  </m_scrollCell>
+  <view class="sub-title">6. 颜色自定义</view>
+  <m_cell color="#d54941" bg="#fff0ed" leftIcon="app"  title="单元格标题"/>
+  <view class="sub-title">7. 与其他组件</view>
+  <view class="sub-title">
+    <m_link url="/pages/collapse/collapse" text="collapse 折叠面板" underLine />
+  </view>
+</view>
+<view class="blank"></view>

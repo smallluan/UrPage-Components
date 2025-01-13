@@ -1,0 +1,41 @@
+<view style="{{mainBox}}" class="mainBox">
+  <!-- 非长选项卡选择栏主题主体 -->
+  <view wx:if="{{!longLen}}" class="tabsBox">
+    <view 
+     wx:for="{{tabsList}}" 
+     wx:key="index" 
+     class="{{tabClass[index]}}" 
+     bindtap="tabClick" 
+     data-id="{{index}}"
+    >
+     <m_badge 
+      wx:if="{{ item.badge }}" 
+      text="{{ item.badge.text}}" 
+      bg="{{ item.badge.bg }}" 
+      color="{{ item.badge.color }}" 
+      shape="{{ item.badge.shape }}" 
+      size="{{ item.badge.size }}" 
+     />
+      <t-icon wx:if="{{item.icon}}" class="icon" name="{{item.icon}}" />
+      {{item.text}}
+    </view>
+    <!-- 背景高光 -->
+    <view wx:if="{{selectedHigthLight.show}}" style="--pos: {{bghlPos}};" class="{{bghlClass}}"></view>
+  </view>
+  <!-- 长选项卡 -->
+  <!-- <scroll-view scroll-x wx:if="{{longLen}}" class="tabsBox scroll">
+    <view wx:for="{{tabsList}}" wx:key="index" 
+          class="{{tabClass[index]}}" 
+          bindtap="tabClick" data-id="{{index}}" >
+          <view class="scroll-each-container">
+            <view class="_scroll-each-container">
+              <t-icon wx:if="{{item.icon}}" class="icon" name="{{item.icon}}"/>
+              <text>{{item.text}}</text>
+            </view>
+          </view>
+    </view>
+  </scroll-view> -->
+  <!-- 光标 -->
+  <view wx:if="{{cursor}}" style="--pos: {{cursorPos}};" class="{{cursorClass}}">
+  </view>
+</view>

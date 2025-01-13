@@ -1,0 +1,32 @@
+<m_navbar bg="#f2f3ff" title="{{ title }}"/>
+
+<view class="_page">
+	<view class="main-title">一. 基础输入框</view>
+<view class="sub-title">1. 纯输入框</view>
+<m_input />
+<view class="sub-title">2. 提示文字输入框</view>
+<m_input tip="提示文字"/>
+<view class="sub-title">3. 图标输入框</view>
+<m_input tip="提示文字" icon="app"/>
+
+<view class="main-title">二. 功能输入框</view>
+<view class="sub-title">1. 描述文字输入框</view>
+<m_input tip="提示文字" icon="app" discription="此处用来添加描述文字"/>
+<view class="sub-title">2. 类型输入框</view>
+<m_input tip="输入数字" icon="relation" placeholder="仅可填写数字" type="number"/>
+<m_input tip="输入密码" icon="center-focus-strong" placeholder="仅可填写小数" type="digit"/>
+<m_input tip="输入密码" icon="user-password" placeholder="仅可填写密码" content="12345" type="password"/>
+<view class="sub-title">3. 字数限制</view>
+<m_input tip="输入文字" icon="app" maxlength="10" discription="该输入框上限10字"/>
+<view class="sub-title">4. 带清除建</view>
+<m_input tip="输入文字" icon="app" discription="该输入框带清除建" content="左侧清除" clearable/>
+<view class="sub-title">5. 禁用输入框</view>
+<m_input tip="输入文字" icon="app" discription="该输入框被禁用" disabled/>
+
+<view class="main-title">三. 自定义样式</view>
+<view class="sub-title">1. 文字颜色</view>
+<m_input tip="提示文字" icon="app" color="#0052d9"/>
+<view class="sub-title">1. 背景颜色</view>
+<m_input tip="提示文字" icon="app" color="#2ba471" bg="#e3f9e9"/>
+</view>
+<view class="blank"></view>
