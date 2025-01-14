@@ -1,7 +1,6 @@
 <m_navbar bg="#f2f3ff" title="{{ title }}"/>
 <view class="_page">
   <view class="sub-title">请向上滑动屏幕，观察最下面图片的加载时机</view>
-  <view class="disc">为使效果更明显，本次使用该组件时延后了图片显示的距离，具体显示的距离可以自定义</view>
 </view>
 <grid-view wx:for="{{ 3 }}" wx:key="index" main-axis-gap="10rpx" cross-axis-gap="20rpx" type="masonry">
   <view wx:key="index" wx:for="{{ goodsList }}">

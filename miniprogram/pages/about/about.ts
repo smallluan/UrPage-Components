@@ -10,4 +10,16 @@ Page({
     },
     tabbarList: tabbarList(),
   },
+
+  copy () {
+    wx.setClipboardData({
+      data: 'https://github.com/smallluan/UrPage-Components',
+      success () {
+       wx.showToast({
+         title: '复制成功！',
+         icon: 'none'
+       })
+      }
+    })
+  },
 })

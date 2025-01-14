@@ -1,4 +1,7 @@
 {
   "component": true,
-  "usingComponents": {}
+  "usingComponents": {
+    "m_cell" : "../cell/cell",
+    "t-icon" : "../icon/icon"
+  }
 }

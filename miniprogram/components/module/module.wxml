@@ -29,4 +29,4 @@
 </view>
 
 
-<m_mask hideable="{{false}}" show="{{show}}"/>
+<m_mask zIndex="999999" hideable="{{false}}" show="{{show}}"/>

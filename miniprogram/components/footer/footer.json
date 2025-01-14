@@ -1,4 +1,7 @@
 {
   "component": true,
-  "usingComponents": {}
+  "usingComponents": {
+    "m_link" : "../link/link"
+  },
+  "styleIsolation": "isolated"
 }

@@ -2,5 +2,6 @@
   "component": true,
   "usingComponents": {
     "m_button" : "../button/button"
-  }
+  },
+  "styleIsolation": "isolated"
 }

@@ -1,3 +1,19 @@
-<m_navbar bg="#f2f3ff" title="{{ title }}" back="{{ false }}"/>
+<m_navbar bg="#f2f3ff" title="{{ title }}" back="{{ false }}" />
+
+<view class="_page">
+  <view class="avatar">
+    <image src="../../image/avatar.jpg" />
+    <view class="nickname">small-luan</view>
+    <view class="disc">本程序仅为组件库的使用示例，具体开源代码请前往项目地址</view>
+  </view>
+  <view class="cells">
+    <m_cell title="项目地址">
+      <view slot="right">
+        <t-icon bindtap="copy" name="copy" size="38rpx" />
+      </view>
+    </m_cell>
+  </view>
+  <m_footer />
+</view>
 
 <m_tabbar tabbarList="{{ tabbarList }}" current="1" shape="capsule" />

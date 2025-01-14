@@ -2,6 +2,8 @@
   "component": true,
   "usingComponents": {
     "m_mask" : "../mask/mask",
-    "m_input" : "../input/input"
+    "m_input" : "../input/input",
+    "t-icon" : "../icon/icon",
+    "m-button" : "../button/button"
   }
 }

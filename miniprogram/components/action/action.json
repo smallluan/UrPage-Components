@@ -1,4 +1,8 @@
 {
   "component": true,
-  "usingComponents": {}
+  "usingComponents": {
+    "m_button" : "../button/button",
+    "m_popup" : "../popup/popup"
+  },
+  "styleIsolation": "isolated"
 }

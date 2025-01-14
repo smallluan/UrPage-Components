@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/about/about",
     "pages/action/action",
     "pages/popup/popup",
     "pages/rate/rate",
@@ -22,7 +23,6 @@
     "pages/cell/cell",
     "pages/pages/dianshang/home/home",
     "pages/somePages/somePages",
-    "pages/about/about",
     "pages/link/link",
     "pages/button/button",
     "pages/module/module",

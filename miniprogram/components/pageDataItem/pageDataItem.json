@@ -1,6 +1,7 @@
 {
   "component": true,
   "usingComponents": {
-    "m_pdi" : "../pageDataItem/pageDataItem"
+    "m_pdi" : "../pageDataItem/pageDataItem",
+    "m_collapse" : "../collapseBox/collapseBox"
   }
 }

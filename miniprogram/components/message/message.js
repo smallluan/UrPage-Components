@@ -1,4 +1,4 @@
-import {getNavBarInfos} from "../tools/sys"
+import { getNavBarInfos } from "../utils/sys"
 Component({
 
   properties: {

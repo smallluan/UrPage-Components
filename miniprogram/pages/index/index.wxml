@@ -1,41 +1,41 @@
-<!-- <m_navbar id="navbar" bg="#f2f3ff" back="{{ false }}">
+<!-- <m_navbar bg="#f2f3ff" back="{{ false }}">
   <m_search shape="round" icon="search" placeholder="搜索组件" disabled />
 </m_navbar> -->
-<m_navbar bg="#f2f3ff" back="{{ false }}" title="{{ title }}"/>
+<m_navbar bg="#f2f3ff" title="{{ title }}"  back="{{ false }}"/>
 <view class="_page">
   <!-- <m_sticky>
     <view style="margin: 20rpx 0 20rpx 0 ;">
       <m_tabs id="tabs" selectedHigthLight="{{ tabsHeightLight }}" tabsList="{{ tabs }}" />
     </view>
   </m_sticky> -->
-  <view id="cg">
-    <m_collapseGroup cellList="{{cellList}}">
-      <view class="eachCollapse" wx:for="{{collapseList}}" wx:key="index" slot="inner{{index}}">
-        <view class="cb-each-inner">
-          <m_cell wx:for="{{item}}" wx:key="index" bg="{{item.bg}}" title="{{item.title}}" data-url="{{item.url}}" bindtap="nav">
-            <view style="display: flex;align-items: center;" slot="right">
-              <view class="label" wx:if="{{ item.label }}">{{ item.label }}</view>
-              <t-icon style="color: gray;" name="chevron-right" />
-            </view>
-          </m_cell>
-        </view>
+  <m_collapseGroup cellList="{{cellList}}">
+    <view class="eachCollapse" wx:for="{{collapseList}}" wx:key="index" slot="inner{{index}}">
+      <view class="cb-each-inner">
+        <m_cell wx:for="{{item}}" wx:key="index" bg="{{item.bg}}" title="{{item.title}}" data-url="{{item.url}}" bindtap="nav">
+          <view style="display: flex;align-items: center;" slot="right">
+            <view class="label" wx:if="{{ item.label }}">{{ item.label }}</view>
+            <t-icon style="color: gray;" name="chevron-right" />
+          </view>
+        </m_cell>
       </view>
-    </m_collapseGroup>
-  </view> 
+    </view>
+  </m_collapseGroup>
   <view class="blank"></view>
 </view>
 <view>
-  <!-- <m_tabbar tabbarList="{{ tabbarList }}" current="0" shape="capsule" /> -->
+  <m_tabbar tabbarList="{{ tabbarList }}" current="0" shape="capsule" />
 </view>
 
-<!-- <m_module content="" btn="confirm" show title="组件上新">
-	<view style="margin-bottom: 20rpx;color: gray;">
-		<m_link text="guide 用户指引" underLine icon url="/pages/guide/guide" />
-	</view>
+<m_scrollTop wx:if="{{ showScrollTop }}" />
+
+<m_module content="" btn="confirm" show title="组件上新">
+  <view style="margin-bottom: 20rpx;color: gray;">
+    <m_link text="guide 用户指引" underLine icon url="/pages/guide/guide" />
+  </view>
   <view style="margin-bottom: 20rpx;color: gray;">
     <m_link text="code 代码区域" underLine icon url="/pages/codes/codes" />
-	</view>
+  </view>
   <view style="margin-bottom: 20rpx;color: gray;">
     <m_link text="lazyImage 懒加载图片" underLine icon url="/pages/lazyimage/lazyimage" />
-	</view>
-</m_module> -->
+  </view>
+</m_module>

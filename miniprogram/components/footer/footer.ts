@@ -11,7 +11,7 @@ Component({
     },
     text: {
       type: String,
-      value: 'Copyright © 2025-2035 TS.All Rights Reserved'
+      value: 'Copyright © 2024 TS.All Rights Reserved'
     }
   },
 

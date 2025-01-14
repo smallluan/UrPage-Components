@@ -1,6 +1,8 @@
 {
   "component": true,
   "usingComponents": {
-    "m_cell" : "../cell/cell"
-  }
+    "m_cell" : "../cell/cell",
+    "t-icon" : "../icon/icon"
+  },
+  "styleIsolation": "isolated"
 }

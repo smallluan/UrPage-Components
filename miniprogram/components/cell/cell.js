@@ -17,7 +17,7 @@ Component({
     },
     underLine: {
       type: Boolean,
-      value: true
+      value: false
     },
     description: {
       type: String,
@@ -39,15 +39,11 @@ Component({
   },
 
   lifetimes: {
-    attached(): void {
+    attached() {
       this.setData({
         classes:  _classes(this.properties, []),
         styles: _style(this.properties, [])
       })
     }
   },
-
-  methods: {
-   
-  }
 })
