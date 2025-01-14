@@ -18,12 +18,4 @@ Component({
       })
     }
   },
-
-  data: {
-
-  },
-
-  methods: {
-
-  }
 })

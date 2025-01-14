@@ -1,4 +1,4 @@
-const { pxToRpx } = require('../tools/px');
+const { pxToRpx } = require('../utils/px');
 Component({
 
   properties: {

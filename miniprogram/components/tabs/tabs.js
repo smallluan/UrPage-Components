@@ -1,52 +1,61 @@
-import {getNavBarInfos} from "../tools/sys"
+import { getNavBarInfos } from "../utils/sys"
 
 Component({
 
   properties: {
     tabsList: {
       type: Array,
-      value: []
+      value: [],
+      discription: '列表'
     },
     currTab: {
       type: Number,
-      value: 0
+      value: 0,
+      disacription: '当前被选择的tab'
     },
     selectedHigthLight: {
       type: Object,
       value: {
         show: false,
         color: '#f2f3ff'
-      }
+      },
+      discription: '被选中后的高光'
     },
     bg: {
       type: String,
-      value: 'white'
+      value: 'white',
+      discription: '默认背景颜色'
     },
     color: {
       type: String,
-      value: '#0052d9'
+      value: '#0052d9',
+      discription: '被选中后，文字 | icon颜色'
     },
     animation: {
       type: Object,
       value: {
         open: true,
         duration: 300
-      }
+      },
+      discription: '动画配置'
     },
     cursor: {
       type: Boolean,
       value: true,
+      discription: '是否显示光标'
     },
     sticky: {
       type: Object,
       value: {
         isStick: false,
         top: 0,
-      }
+      },
+      discription: '粘性布局配置'  // TODO
     },
     longLen: {
       type: Boolean,
-      value: false
+      value: false,
+      discription: '长 tab 需要滚动'  // TODO
     }
   },
 

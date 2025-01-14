@@ -1,8 +1,16 @@
 <view class="{{theme == 'card' ? 'card' : 'normal'}}">
-	<!-- 标题 -->
-	<view wx:if="{{title}}" class="title">{{title}}</view>
-	<!-- 输入区域 -->
-	<textarea class="{{border?'border': ''}}" value="{{text}}" auto-height="{{autoHeight}}" maxlength="{{maxlength}}" placeholder="{{placeholder}}" bindinput="getText" >
+  <!-- 标题 -->
+  <view wx:if="{{title}}" class="title">{{title}}</view>
+  <!-- 输入区域 -->
+  <textarea 
+    disabled="{{ disabled }}" 
+    class="{{border?'border': ''}}" 
+    value="{{text}}" 
+    auto-height="{{autoHeight}}" 
+    maxlength="{{maxlength}}" 
+    placeholder="{{placeholder}}" 
+    bindinput="getText"
+  >
 		<view class="maxlength" wx:if="{{maxlength != -1}}">{{text.length}} / {{maxlength}}</view>
 		<view class="clear" wx:if="{{clearable && text.length != 0}}" bindtap="clear"><t-icon name="close"/>清空</view>
 	</textarea>

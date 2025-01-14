@@ -1,52 +1,52 @@
 Component({
 
   properties: {
-    // 文字
     text: {
       type: String,
       value: '',
+      discription: '文字内容'
     },
-    // 占位符
     placeholder: {
       type: String,
       value: "请输入文字",
+      discription: '占位符'
     },
-    // 标题
     title: {
       type: String,
       value: '',
+      discription: '标题'
     },  
-    // 自动高度
     autoHeight: {
       type: Boolean,
       value: false,
+      discription: '自动高度'
     },
-    // 字符最大长度
     maxlength: {
       type: Number,
       value: -1,
+      discription: '字符最大长度'
     },
-    // 一键清除浮标
     clearable: {
       type: Boolean,
       value: false,
+      discription: '一键清除浮标'
     },
-    // 风格
     theme: {
       type: String,
-      value: 'normal'  // normal | card
+      value: 'normal',  // normal | card
+      discription: '风格'
     },
-    // 输入框边框
     border: {
       type: Boolean,
       value: false,
+      discription: '输入框边框'
+    },
+    disabled: {
+      type: Boolean,
+      value: false
     }
   },
-
-  data: {
-    timer: null
-  },
-
+  
   methods: {
     // 获取文字
     getText(e) {
