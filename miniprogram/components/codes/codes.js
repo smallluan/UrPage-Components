@@ -1,12 +1,13 @@
 import { __dealJs__ } from './javaScript'
 import { __dealHtml__ } from './html'
+import { __dealCss__ } from './css'
 
 Component({
 
   properties: {
     code: {
       type: String,
-      value: ''
+      value: ``
     },
     lang: {
       type: String,
@@ -35,6 +36,8 @@ Component({
           this.setData({ _code: __dealJs__(this.data.code).slice(0, -1)})
         } else if (['html', 'HTML', 'wxml', 'WXML', 'XML', 'xml'].includes(lang)) {
           this.setData({ _code: __dealHtml__(this.data.code).slice(0, -1)})
+        } else if (['css', 'Css', 'CSS'].includes(lang)) {
+          this.setData({ _code: __dealCss__(this.data.code).slice(0, -1)})
         }
       } else if (type === 'inline' && inlineHighLight) {
         if (['js', 'javaScript', 'javascript', 'JavaScript'].includes(lang)) {

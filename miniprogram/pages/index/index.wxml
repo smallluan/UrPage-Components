@@ -27,7 +27,7 @@
 </view>
 
 <m_scrollTop wx:if="{{ showScrollTop }}" />
-
+<!-- 
 <m_module content="" btn="confirm" show title="组件上新">
   <view style="margin-bottom: 20rpx;color: gray;">
     <m_link text="guide 用户指引" underLine icon url="/pages/guide/guide" />
@@ -38,4 +38,4 @@
   <view style="margin-bottom: 20rpx;color: gray;">
     <m_link text="lazyImage 懒加载图片" underLine icon url="/pages/lazyimage/lazyimage" />
   </view>
-</m_module>
+</m_module> -->

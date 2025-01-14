@@ -7,8 +7,10 @@
   <view class="inline-code">当内容超出范围时，可以试着<m_code code="上下或者左右滑动" type="inline"/>。</view>
   <view class="sub-title">1. javaScript</view>
   <m_code code="{{ codeJs }}" type="block" lang="js" />
-  <view class="sub-title">2. xml</view>
+  <view class="sub-title">2. wxml</view>
   <m_code code="{{ codeHtml }}" type="block" lang="html" />
+  <view class="sub-title">3. css</view>
+  <m_code code="{{ codeCss }}" type="block" lang="css" />
 </view>
 
 <view class="blank"></view>

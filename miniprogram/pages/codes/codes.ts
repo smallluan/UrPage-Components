@@ -29,6 +29,15 @@ Page({
         tabsList="{{ tabs }}" 
         />
     </view>
+    `,
+    codeCss: `
+  .box {
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    margin: 10px 20px;
+  }
     `
   },
 })
