@@ -1,8 +1,4 @@
 export const __dealCss__ = (str) => {
-  // const classList = splitByClass(str)
-  // const res = classList.map(item => {
-  //   return dealEachClass(item.split('\n'))
-  // })
   let arr = []
   // 将空格用自定义空格占位符进行占位
   let _str = appendTagBlank(str)
@@ -12,9 +8,7 @@ export const __dealCss__ = (str) => {
   const res = strList.map(item => {
     return dealEachClass(item.split('\n'))
   })
-  console.log(res)
   return res
-  
 }
 
 // 处理每一个类
@@ -55,22 +49,6 @@ function dealEachClass (str) {
   })
   return res
 }
-
-// 将代码按照类分割
-function splitByClass (str) {
-  let res = []
-  let i = 0
-  let j = 0
-  while (j < str.length) {
-    if (str[j] === '}') {
-      res.push(str.split('').slice(i, ++ j).join(''))
-      i = j
-    }
-    j ++
-  }
-  return res
-}
-
 
 // 去掉每个非纯空格元素的前后空格
 function trim (i) {

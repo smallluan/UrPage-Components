@@ -45,12 +45,10 @@ Component({
           console.log(this.data._code)
         } else if (['html', 'HTML', 'wxml', 'WXML', 'XML', 'xml'].includes(lang)) {
           this.setData({ _code: __dealHtml__(this.data.code)})
+        } else if (['css', 'Css', 'CSS'].includes(lang)) {
+          this.setData({ _code: __dealCss__(this.data.code)})
         }
       }
     }
   },
-
-  methods: {
-
-  }
 })
