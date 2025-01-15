@@ -7,7 +7,7 @@
     <view class="disc">本程序仅为组件库的使用示例，具体开源代码请前往项目地址</view>
   </view>
   <view class="cells">
-    <m_cell title="项目地址">
+    <m_cell leftIcon="logo-github" title="项目地址">
       <view slot="right">
         <t-icon bindtap="copy" name="copy" size="38rpx" />
       </view>

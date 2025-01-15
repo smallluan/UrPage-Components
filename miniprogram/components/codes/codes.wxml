@@ -1,4 +1,5 @@
 <view wx:if="{{ type === 'block' }}" class="code-area">
+  <view class="lang">{{ lang }}</view>
   <scroll-view  scroll-x="true" style="padding: 0;margin: 0;height: fit-content;" >
     <view class="eachLine" wx:for="{{ _code }}">
       <view class="lineIndex">{{ index + 1 }}</view>
