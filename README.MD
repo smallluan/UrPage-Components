@@ -2,7 +2,7 @@
 
 其中 `icon` 组件和  `色彩指引` 请参考腾讯 TDesign 组件库 ，链接如下
 
-[TDesign - 开源的企业级设计体系]()
+[TDesign - 开源的企业级设计体系](https://tdesign.tencent.com/)
 
 具体使用的文件夹为 `components/icon` 和 `components/common`
 

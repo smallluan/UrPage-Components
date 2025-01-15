@@ -9,7 +9,12 @@
   <view class="cells">
     <m_cell leftIcon="logo-github" title="项目地址">
       <view slot="right">
-        <t-icon bindtap="copy" name="copy" size="38rpx" />
+        <t-icon data-msg="https://github.com/smallluan/UrPage-Components" bindtap="copy" name="copy" size="38rpx" />
+      </view>
+    </m_cell>
+    <m_cell leftIcon="mail" title="联系开发者">
+      <view slot="right">
+        <t-icon data-msg="5098051800@qq.com" bindtap="copy" name="copy" size="38rpx" />
       </view>
     </m_cell>
   </view>

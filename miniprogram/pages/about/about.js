@@ -11,9 +11,10 @@ Page({
     tabbarList: tabbarList(),
   },
 
-  copy () {
+  copy (e) {
+    const {currentTarget: { dataset: { msg } }} = e
     wx.setClipboardData({
-      data: 'https://github.com/smallluan/UrPage-Components',
+      data: msg,
       success () {
        wx.showToast({
          title: '复制成功！',
