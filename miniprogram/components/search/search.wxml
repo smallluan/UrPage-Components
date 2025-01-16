@@ -5,6 +5,6 @@
 		<t-icon bindtap="clear" wx:if="{{content.length && clearable}}" class="clear" name="close"/>
 	</view>
 	<view class="btn btn-{{content.length!==0 ? 'show' : 'hide'}}">	
-		<m_button disabled="{{disabled}}" wx:if="{{btn}}" content="搜索" shape="{{shape}}" size="small"/>
+		<m_button bindtap="search" disabled="{{disabled}}" wx:if="{{btn}}" content="搜索" shape="{{shape}}" size="small"/>
 	</view>
 </view>

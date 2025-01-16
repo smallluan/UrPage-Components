@@ -1,0 +1,18 @@
+<!-- 
+  搜索组件页面
+ -->
+
+<m_navbar bg="#f3f3f3" />
+
+<view class="_page">
+  <m_search bindsearch="search" placeholder="搜索组件" icon="search" btn />
+  <view wx:if="{{ resList.length }}" class="main-title">搜索到{{ resList.length }}个结果：</view>
+  <m_cell bindtap="nav" data-url="{{ item.url }}" wx:for="{{ resList }}" title="{{ item.title }}">
+    <t-icon slot="right" name="chevron-right" />
+  </m_cell>
+</view>
+
+<m_loading wx:if="{{ showLoading }}" />
+
+<view class="blank"></view>
+

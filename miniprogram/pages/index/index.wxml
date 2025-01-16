@@ -1,7 +1,6 @@
-<!-- <m_navbar bg="#f2f3ff" back="{{ false }}">
-  <m_search shape="round" icon="search" placeholder="搜索组件" disabled />
-</m_navbar> -->
-<m_navbar bg="#f2f3ff" title="{{ title }}"  back="{{ false }}"/>
+<m_navbar bg="#f2f3ff" back="{{ false }}">
+  <m_search bindtap="nav" data-url="/pages/_search/_search" shape="round" icon="search" placeholder="搜索组件" disabled />
+</m_navbar>
 <view class="_page">
   <!-- <m_sticky>
     <view style="margin: 20rpx 0 20rpx 0 ;">

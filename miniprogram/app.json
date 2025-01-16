@@ -39,8 +39,9 @@
     "pages/switch/switch",
     "pages/input/input",
     "pages/progress/progress",
-    "pages/search/search"
-
+    "pages/search/search",
+    "pages/_search/_search"
+    
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -84,8 +85,8 @@
     "m_slider": "components/slider/slider",
     "m_message": "components/message/message",
     "m_rate": "components/rate/rate",
-    "m_popup" : "components/popup/popup",
-    "m_actions" : "components/action/action"
+    "m_popup": "components/popup/popup",
+    "m_actions": "components/action/action"
   },
   "tabBar": {
     "list": [

@@ -9,12 +9,6 @@ Page({
     cellList: store.getCellListCates(),
     tabsHeightLight: store.tabsHeightLight(),
     showScrollTop: false,
-    title: {
-      text: "UrPage 组件库",
-      fontWeight: '700',
-      fontSize: '38rpx',
-      color: '#0052d9'
-    },
   },
 
   onPageScroll(e) {

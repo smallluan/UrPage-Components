@@ -49,6 +49,9 @@ Component({
       this.setData({
         content: ''
       })
+    },
+    search () {
+      this.triggerEvent('search', {content: this.data.content})
     }
   }
 })
