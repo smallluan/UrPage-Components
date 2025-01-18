@@ -6,6 +6,9 @@
 	<m_cell title="基础步进器">
 		<m_stepper slot="right" />
 	</m_cell>
+  <m_cell title="步进大小">
+		<m_stepper step="10" slot="right" />
+	</m_cell>
 	<view class="main-title">二. 组件类型</view>
 	<view class="sub-title">1. 设定最值</view>
 	<m_cell title="设定最小值">

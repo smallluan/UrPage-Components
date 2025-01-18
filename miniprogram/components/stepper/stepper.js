@@ -19,6 +19,11 @@ Component({
     size: {
       type: String,
       value: 'normal'
+    },
+
+    step: {
+      type: Number,
+      value: 1
     }
 
   },
@@ -44,16 +49,18 @@ Component({
     },
 
     minus() {
-      if(this.data.disabled) return ;
+      const { disabled, step, min, val } = this.data
+      if(disabled) return ;
       this.setData({
-        val: Math.max(this.data.min, this.data.val - 1)
+        val: Math.max(min, val - step)
       })
     },
 
     add() {
-      if(this.data.disabled) return ;
+      const { disabled, step, val } = this.data
+      if(disabled) return ;
       this.setData({
-        val: Math.min(999, this.data.val + 1)
+        val: Math.min(999, val + step)
       })
     },
 
