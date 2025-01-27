@@ -10,6 +10,7 @@
   <m_cell bindtap="nav" data-url="{{ item.url }}" wx:for="{{ resList }}" title="{{ item.title }}">
     <t-icon slot="right" name="chevron-right" />
   </m_cell>
+  <view class="res-blank" wx:if="{{ resList.length === 0 }}">没有搜索到组件哦~</view>
 </view>
 
 <m_loading wx:if="{{ showLoading }}" />

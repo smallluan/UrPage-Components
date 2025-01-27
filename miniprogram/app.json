@@ -40,8 +40,8 @@
     "pages/input/input",
     "pages/progress/progress",
     "pages/search/search",
-    "pages/_search/_search"
-    
+    "pages/_search/_search",
+    "pages/timeLine/timeLine"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -86,7 +86,8 @@
     "m_message": "components/message/message",
     "m_rate": "components/rate/rate",
     "m_popup": "components/popup/popup",
-    "m_actions": "components/action/action"
+    "m_actions": "components/action/action",
+    "m_timeLine": "components/timeLine/timeLine"
   },
   "tabBar": {
     "list": [

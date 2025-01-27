@@ -218,6 +218,11 @@ export const getEachList = () => {
         url: '/pages/progress/progress',
       },
       {
+        title: 'timeLine 时间轴',
+        url: '/pages/timeLine/timeLine',
+        label: 'New'
+      },
+      {
         title: 'countDown 倒计时',
         url: '/pages/countDown/countDown',
         label: 'New'

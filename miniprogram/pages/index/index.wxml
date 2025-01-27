@@ -26,6 +26,7 @@
 </view>
 
 <m_scrollTop wx:if="{{ showScrollTop }}" />
+
 <!-- 
 <m_module content="" btn="confirm" show title="组件上新">
   <view style="margin-bottom: 20rpx;color: gray;">

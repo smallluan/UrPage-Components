@@ -1,0 +1,19 @@
+<view class="box">
+  <view class="each-event" wx:for="{{ events }}">
+    <view class="event-icon" wx:if="{{ item.icon }}">
+      <t-icon name="{{ item.icon }}" />
+    </view>
+    <view class="event-dot" wx:if="{{ !item.icon }}"></view>
+    <view class="info-box">
+      <view wx:if="{{ item.title }}" class="event-title">{{ item.title }} <text wx:if="{{ item.label }}" class="label">{{ item.label }}</text> </view>
+      <view class="event-time">{{ item.time }}</view>
+      <view class="event-detail">{{ item.detail }}</view>
+      <view wx:if="{{ item.img }}" class="event-img">
+        <image src="{{ item.img }}" mode="widthFix"  />
+      </view>
+      <view>
+        <slot></slot>
+      </view>
+    </view>
+  </view>
+</view>

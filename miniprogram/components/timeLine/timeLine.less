@@ -1,0 +1,69 @@
+@import '../utils/color.less';
+@import '../utils/common.less';
+
+.box {
+  width: 94%;
+  margin: 0 auto;
+  .each-event {
+    border-left: 1rpx solid gray;
+    position: relative;
+
+    .event-icon,
+    .event-dot {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(-50%);
+    }
+
+    .event-icon {
+      color: white;
+      font-weight: 700;
+      padding: 8rpx;
+      border-radius: 50%;
+      background: @mainblue;
+      font-size: 28rpx;
+    }
+
+    .event-dot {
+      width: 20rpx;
+      height: 20rpx;
+      background: gray;
+      border-radius: 50%;
+    }
+
+    .info-box {
+      width: 86%;
+      margin-left: 7%;
+
+      & > view {
+        &:not(:first-child) {
+          margin-top: 12rpx;
+        }
+        &:last-child {
+          padding-bottom: 30rpx;
+        }
+      }
+
+      .event-title {
+        font-size: 36rpx;
+        font-weight: 700;
+      }
+
+      .event-time {
+        color: gray;
+        font-size: 24rpx;
+      }
+
+      .event-detail {
+        color: gray;
+      }
+
+      .event-img {
+        width: 96%;
+        border-radius: 12rpx;
+        overflow: hidden;
+      }
+    }
+  }
+}
