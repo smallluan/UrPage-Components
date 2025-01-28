@@ -2,11 +2,13 @@
 
 <view class="_page">
   <view class="avatar">
-    <image src="../../image/avatar.jpg" />
+    <image src="http://www.think-bold.top/assets/avatar-C3qWQ9Fx.jpg" />
     <view class="nickname">small-luan</view>
-    <view class="disc">本程序仅为组件库的使用示例，具体开源代码请前往项目地址</view>
   </view>
   <view class="cells">
+    <m_cell bindtap="nav" data-url="/pages/versions/versions" leftIcon="app" title="版本指引">
+      <t-icon slot='right' name="chevron-right" />
+    </m_cell>
     <m_cell leftIcon="logo-github" title="项目地址">
       <view slot="right">
         <t-icon data-msg="https://github.com/smallluan/UrPage-Components" bindtap="copy" name="copy" size="38rpx" />
@@ -15,6 +17,11 @@
     <m_cell leftIcon="mail" title="联系开发者">
       <view slot="right">
         <t-icon data-msg="5098051800@qq.com" bindtap="copy" name="copy" size="38rpx" />
+      </view>
+    </m_cell>
+    <m_cell leftIcon="code" title="个人博客">
+      <view slot="right">
+        <t-icon data-msg="http://think-bold.top" bindtap="copy" name="copy" size="38rpx" />
       </view>
     </m_cell>
   </view>

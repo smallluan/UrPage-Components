@@ -41,7 +41,8 @@
     "pages/progress/progress",
     "pages/search/search",
     "pages/_search/_search",
-    "pages/timeLine/timeLine"
+    "pages/timeLine/timeLine",
+    "pages/versions/versions"
   ],
   "window": {
     "navigationBarTextStyle": "black",

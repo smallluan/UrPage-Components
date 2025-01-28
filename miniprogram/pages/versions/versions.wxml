@@ -1,0 +1,7 @@
+<m_navbar bg="#f2f3ff" title="{{ title }}" />
+
+<view class="_page" style="margin-top: 40rpx;">
+  <m_timeLine events='{{ versions }}' />
+</view>
+
+<view class="blank"></view>

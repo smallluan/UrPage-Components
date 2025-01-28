@@ -18,16 +18,6 @@ export const tabs = () => {
       icon: 'setting',
       disabled: false,
     },
-    {
-      text: '动画',
-      icon: 'transform-2',
-      disabled: false,
-    },
-    {
-      text: '其他',
-      icon: 'more',
-      disabled: false,
-    },
   ]
 }
 

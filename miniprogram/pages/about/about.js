@@ -23,4 +23,11 @@ Page({
       }
     })
   },
+
+  nav (e) {
+    const {currentTarget: { dataset: { url } }} = e
+    wx.navigateTo({
+      url: url,
+    })
+  }
 })
