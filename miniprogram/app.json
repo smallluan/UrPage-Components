@@ -42,7 +42,8 @@
     "pages/search/search",
     "pages/_search/_search",
     "pages/timeLine/timeLine",
-    "pages/versions/versions"
+    "pages/versions/versions",
+    "pages/colorChooser/colorChooser"
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -88,7 +89,8 @@
     "m_rate": "components/rate/rate",
     "m_popup": "components/popup/popup",
     "m_actions": "components/action/action",
-    "m_timeLine": "components/timeLine/timeLine"
+    "m_timeLine": "components/timeLine/timeLine",
+    "m_color" : "components/colorChooser/colorChooser"
   },
   "tabBar": {
     "list": [

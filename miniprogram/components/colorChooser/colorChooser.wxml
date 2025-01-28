@@ -1,0 +1,6 @@
+<view class="color-box">
+  <view wx:for="{{ colors }}" style="background: rgba({{ item.r }}, {{ item.g }}, {{ item.b }});" 
+    class="color-item"
+  >
+  </view>
+</view>

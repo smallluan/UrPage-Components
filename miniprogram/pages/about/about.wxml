@@ -1,9 +1,20 @@
 <m_navbar bg="#f2f3ff" title="{{ title }}" back="{{ false }}" />
 
 <view class="_page">
-  <view class="avatar">
+  <view class="info-box">
     <image src="http://www.think-bold.top/assets/avatar-C3qWQ9Fx.jpg" />
-    <view class="nickname">small-luan</view>
+    <view class="basic-info">
+      <view class="each-info" wx:for="{{ basicInfos }}">
+        <view class="key">{{ item.key }} : </view>
+        <view class="value">{{ item.value }}</view>
+      </view>
+    </view>
+    <!-- <view class="progress-box">
+      <view wx:for="{{ progressList }}" class="each-progress">
+        <m_progress shape='line' activeColor="{{ item.activeColor }}" progress="{{ item.progress }}"/>
+        <view style="margin-top: 12rpx;">{{ item.text }}</view>
+      </view>
+    </view> -->
   </view>
   <view class="cells">
     <m_cell bindtap="nav" data-url="/pages/versions/versions" leftIcon="app" title="版本指引">

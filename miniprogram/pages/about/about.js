@@ -9,6 +9,29 @@ Page({
       color: '#0052d9'
     },
     tabbarList: tabbarList(),
+    basicInfos: [
+      {
+        key: '昵称',
+        value: '小乱乱',
+      },
+      {
+        key: '教育背景',
+        value: '北京化工大学'
+      },
+      {
+        key: '专业信息',
+        value: '信息学院 / 自动化'
+      },
+      {
+        key: '生日',
+        value: '2004 / 01 / 23'
+      },
+    ],
+    progressList: [
+      { progress: 70, text: '坚持', activeColor: '#0052d9' }, 
+      { progress: 55, text: '抗压', activeColor: '#d54941' }, 
+      { progress: 86, text: '幽默', activeColor: '#2ba471' }, 
+    ]
   },
 
   copy (e) {

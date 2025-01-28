@@ -28,6 +28,7 @@ export const tabsHeightLight = () => {
     color: '#f2f3ff'
   }
 }
+
 export const getCellListCates = () => {
   return [{
       title: '基础组件',
