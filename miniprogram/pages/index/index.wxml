@@ -2,11 +2,11 @@
   <m_search bindtap="nav" data-url="/pages/_search/_search" shape="round" icon="search" placeholder="搜索组件" disabled />
 </m_navbar>
 <view class="_page">
-  <!-- <m_sticky>
+  <m_sticky>
     <view style="margin: 20rpx 0 20rpx 0 ;">
-      <m_tabs id="tabs" selectedHigthLight="{{ tabsHeightLight }}" tabsList="{{ tabs }}" />
+      <m_tabs currTab="{{ currTab }}" bindtabClick="tabClick" id="tabs" selectedHigthLight="{{ tabsHeightLight }}" tabsList="{{ tabs }}" />
     </view>
-  </m_sticky> -->
+  </m_sticky>
   <m_collapseGroup cellList="{{cellList}}">
     <view class="eachCollapse" wx:for="{{collapseList}}" wx:key="index" slot="inner{{index}}">
       <view class="cb-each-inner">

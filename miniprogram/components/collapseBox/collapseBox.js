@@ -43,13 +43,13 @@ Component({
       this.setClass();
     },
     ready() {
-      // 获取被折叠部分的高度
-      const query = this.createSelectorQuery();
-      query.select('#slot').boundingClientRect().exec(res=>{
-        this.setData({
-          height: res[0].height
-        })
-      });
+      this.getFoldedHeight()
+    }
+  },
+
+  observers: {
+    'cell' : function () {
+      this.getFoldedHeight()
     }
   },
 
@@ -92,6 +92,16 @@ Component({
     unfold () {
       this.setData({ fold: false })
       this.setClass()
+    },
+
+    // 获取被折叠部分的高度
+    getFoldedHeight () {
+      const query = this.createSelectorQuery();
+      query.select('#slot').boundingClientRect().exec(res=>{
+        this.setData({
+          height: res[0].height
+        })
+      });
     }
   }
 })

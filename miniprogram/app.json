@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/combComponents/imageChooser/imageChooser",
     "pages/about/about",
     "pages/action/action",
     "pages/popup/popup",
@@ -43,7 +44,9 @@
     "pages/_search/_search",
     "pages/timeLine/timeLine",
     "pages/versions/versions",
-    "pages/colorChooser/colorChooser"
+    "pages/colorChooser/colorChooser",
+    "pages/funcs/random/random"
+    
   ],
   "window": {
     "navigationBarTextStyle": "black",
@@ -90,7 +93,7 @@
     "m_popup": "components/popup/popup",
     "m_actions": "components/action/action",
     "m_timeLine": "components/timeLine/timeLine",
-    "m_color" : "components/colorChooser/colorChooser"
+    "m_color": "components/colorChooser/colorChooser"
   },
   "tabBar": {
     "list": [

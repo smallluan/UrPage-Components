@@ -2,8 +2,19 @@
 export const tabs = () => {
   return [
     {
-      text: '组件',
-      icon: 'app',
+      text: '基础式',
+      icon: '',
+      disabled: false,
+      badge: {
+        bg: '#0052d9',
+        color: 'white',
+        text: 'New',
+        shape: 'bubble',
+        size: 'small'
+      }
+    },
+    {
+      text: '组合式',
       disabled: false,
       badge: {
         bg: '#0052d9',
@@ -15,7 +26,6 @@ export const tabs = () => {
     },
     {
       text: '功能',
-      icon: 'setting',
       disabled: false,
     },
   ]
@@ -29,7 +39,8 @@ export const tabsHeightLight = () => {
   }
 }
 
-export const getCellListCates = () => {
+// 基础式单元格类型
+export const getBasicCellListCates = () => {
   return [{
       title: '基础组件',
       borderBottom: true,
@@ -69,7 +80,8 @@ export const getCellListCates = () => {
   ]
 }
 
-export const getEachList = () => {
+// 基础式单元格列表
+export const getEachBasicList = () => {
   return [
     [{
         title: 'Button 按钮',
@@ -231,6 +243,67 @@ export const getEachList = () => {
         title: 'Skeleton 骨架屏',
         url: '/pages/skeleton/skeleton',
       },
+    ],
+  ]
+}
+
+// 组合式单元格类型
+export const getCombCellListCates = () => {
+  return [
+    {
+      title: '媒体信息',
+      borderBottom: true,
+      color: '#0052d9',
+      bg: 'white',
+    },
+    {
+      title: '表单信息',
+      borderBottom: true,
+      color: '#0052d9',
+      bg: 'white',
+    },
+  ]
+}
+
+// 组合式单元格列表
+export const getEachCombList = () => {
+  return [
+    [{
+        title: 'Image 图片选择',
+        url: '/pages/combComponents/imageChooser/imageChooser',
+        label: 'v 2.0.0'
+      },
+      {
+        title: 'File 文件选择',
+        url: '',
+        label: 'v 2.0.0'
+      },
+    ],
+    [
+    ],
+  ]
+}
+
+// 获取功能单元格类型
+export const getFuncCellListCates = () => {
+  return [
+    {
+      title: '内容类',
+      borderBottom: true,
+      color: '#0052d9',
+      bg: 'white',
+    }
+  ]
+}
+
+export const getEachFuncList = () => {
+  return [
+    [
+      {
+        title: '随机生成',
+        url: '/pages/funcs/random/random',
+        label: 'New'
+      }
     ],
   ]
 }

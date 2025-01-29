@@ -69,6 +69,18 @@ export const getJsSaveWords = () => {
       class: 'if-class'
     },
     {
+      key: 'import',
+      class: 'if-class'
+    },
+    {
+      key: 'as',
+      class: 'if-class'
+    },
+    {
+      key: 'from',
+      class: 'if-class'
+    },
+    {
       key: '?',
       class: 'if-class'
     },

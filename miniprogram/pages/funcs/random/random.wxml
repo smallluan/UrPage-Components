@@ -1,0 +1,12 @@
+<m_navbar bg="#f2f3ff" title="{{ title }}"/>
+
+<view class="_page">
+  <view class="main-title">随机数</view>
+  <view class="sub-title">随机整数</view>
+
+  <m_cell title='随机数字：{{ randomInt0_9 }}'>
+    <m_button bindtap="randomInt0_9" size='small' slot='right' content='生成' />
+  </m_cell>
+  <view class="disc">上面只会生成 0 ~ 9的数字，并且不会产生 [1, 3]其中的数字，因为该方法在这里使用时代码如下：</view>
+  <m_code lang='js' code='{{ codeRandomInt0_9 }}' />
+</view>

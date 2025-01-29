@@ -1,0 +1,5 @@
+<m_navbar bg="#f2f3ff" title="{{ title }}" />
+
+<view class="_page">
+  <view class="disc">正在开发，敬请期待</view>
+</view>
