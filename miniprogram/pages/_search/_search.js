@@ -1,11 +1,11 @@
-import { getEachList } from '../index/store'
+import { getEachBasicList } from '../index/store'
 
 Page({
 
   data: {
     componentsList:(() => {
       let list = []
-      getEachList().forEach(item => {
+      getEachBasicList().forEach(item => {
         list = [...list, ...item]
       })
       return list

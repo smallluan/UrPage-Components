@@ -13,7 +13,6 @@ Page({
 
   onLoad () {
     this.getListByCurrTab()
-    console.log(tools.randomInt0_9(1, 5, [2]), tools.randomInt0_9(1, 5, [2]), tools.randomInt0_9(1, 5, [2]))
   },
 
   onPageScroll(e) {

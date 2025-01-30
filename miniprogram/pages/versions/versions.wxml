@@ -5,3 +5,4 @@
 </view>
 
 <view class="blank"></view>
+<m_loading show="{{ loading }}" />

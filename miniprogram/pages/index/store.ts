@@ -1,5 +1,6 @@
 // 选项卡列表
 export const tabs = () => {
+  
   return [
     {
       text: '基础式',
