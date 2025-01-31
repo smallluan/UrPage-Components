@@ -3,6 +3,6 @@
   "projectname": "UrPage%20Components",
   "setting": {
     "compileHotReLoad": true,
-    "urlCheck": false
+    "urlCheck": true
   }
 }
