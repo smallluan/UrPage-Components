@@ -1,7 +1,7 @@
 <block wx:if="{{ startGuide }}">
   <view catchtap="true" catchtouchmove='true' class="under-mask"></view>
   <view catchtap="true" catchtouchmove='true' style="{{ styles }}" class="high-light">
-    <view class="module" style="{{ styles }}" >
+    <view class="module" style="{{ styles }}">
       <view class="title">{{ currentNode.item.title }} {{ current + 1}} / {{ nodes.length }}</view>
       <view class="content">{{ currentNode.item.content }}</view>
       <view class="flex-box btn " wx:if="{{ current !== nodes.length - 1 }}">

@@ -93,7 +93,8 @@
     "m_popup": "components/popup/popup",
     "m_actions": "components/action/action",
     "m_timeLine": "components/timeLine/timeLine",
-    "m_color": "components/colorChooser/colorChooser"
+    "m_color": "components/colorChooser/colorChooser",
+    "m_pagegation": "components/pagegation/pagegation"
   },
   "tabBar": {
     "list": [

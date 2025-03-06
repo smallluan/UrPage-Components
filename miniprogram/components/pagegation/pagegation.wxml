@@ -1,0 +1,12 @@
+<view class="container">
+  <t-icon bindtap="toPrev" class="page-block" name="chevron-left" />
+  <!-- 分页个数小于 maxPage 就直接一行展示 -->
+  <view wx:if="{{ pageNum <= maxPage }}" class="page-block {{ currPage === index + 1 ? 'curr-page' : '' }}" wx:for="{{ pageNum }}">{{ index + 1 }}</view>
+  <!-- 分页个数大于 maxPage ，在一行内展示不下，但是不换行，进行省略处理 -->
+  <block wx:if='{{ pageNum > maxPage }}'>
+    <view class="page-block {{ currPage === index + 1 ? 'curr-page' : '' }}" wx:for="{{ 5 }}">{{ index + 1 }}</view>
+    <view  class="page-block ">...</view>
+    <view class="page-block {{ currPage === pageNum ? 'curr-page' : '' }}">{{ pageNum }}</view>
+  </block>
+  <t-icon bindtap="toNext" class="page-block" name="chevron-right" />
+</view>

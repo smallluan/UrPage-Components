@@ -1,0 +1,22 @@
+@import '../utils/color.less';
+
+.container {
+  display: flex;
+  align-items: center;
+  .page-block {
+    width: 60rpx;
+    height: 60rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10rpx; 
+    background: @lightgray;
+    border-radius: 10rpx;
+    transition: all .1s ease-in-out;
+  }
+}
+
+.curr-page {
+  background: @mainblue !important;
+  color: white;
+}
