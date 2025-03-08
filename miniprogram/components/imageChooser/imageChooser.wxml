@@ -1,0 +1,22 @@
+<view 
+  id="container" 
+  bindtouchmove="move" 
+  bindtouchstart="touchStart"
+  bindtouchend="touchEnd"
+  class="container"
+>
+  <view 
+    wx:for="{{ list }}"  
+    class="item-container"
+    style="--offsetX: {{ offsetX }}px; --offsetY: {{ offsetY }}px"
+  >
+    <view 
+      id="image-{{ item.id }}" 
+      data-id="{{ item.id }}" 
+      bindlongpress="longPress" 
+      class="item {{ item.id ===  currentEle ? 'offset' : 'noOffset'}}" 
+      >
+      <image mode="aspectFill" src="{{ item.url }}"></image>
+    </view>
+  </view>
+</view>

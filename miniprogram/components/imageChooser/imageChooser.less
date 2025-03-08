@@ -1,0 +1,58 @@
+@import "../utils/color.less";
+
+.container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 20rpx;
+  row-gap: 40rpx;
+  width: 100%;
+  border: 1rpx solid red;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.item-container {
+  height: 200rpx;
+  border-radius: 10rpx;
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+image {
+  border-radius: 10px;
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.offset {
+  position: relative;
+  left: var(--offsetX);
+  top: var(--offsetY);
+  z-index: 90;
+  border-radius: 10px;
+  scale: 1.1;
+  transition: 
+  scale .3s ease-in-out, 
+  box-shadow .3s ease-in-out,;
+}
+
+.noOffset {
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  border-radius: 10px;
+  scale: 1;
+  transition: 
+    scale .3s ease-in-out, 
+    box-shadow .3s ease-in-out,
+    left .3s ease-in-out,
+    top .3s ease-in-out,
+    z-index .3s ease-in-out;
+}

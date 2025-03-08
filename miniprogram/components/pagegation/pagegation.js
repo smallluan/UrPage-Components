@@ -3,7 +3,7 @@ Component({
   properties: {
     pageSize: {
       type: 'number',
-      value: 50,
+      value: 100,
     },
     eachPageSize: {
       type: 'number',

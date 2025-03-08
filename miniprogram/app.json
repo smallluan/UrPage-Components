@@ -94,7 +94,8 @@
     "m_actions": "components/action/action",
     "m_timeLine": "components/timeLine/timeLine",
     "m_color": "components/colorChooser/colorChooser",
-    "m_pagegation": "components/pagegation/pagegation"
+    "m_pagegation": "components/pagegation/pagegation",
+    "m_imageChooser": "components/imageChooser/imageChooser"
   },
   "tabBar": {
     "list": [

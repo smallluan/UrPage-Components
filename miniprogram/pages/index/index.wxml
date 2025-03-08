@@ -19,10 +19,8 @@
       </view>
     </view>
   </m_collapseGroup>
-  <view style="background-color: white;padding: 100px 0;">
-    <m_pagegation/>
-  </view>
-
+  <m_imageChooser/>
+  <!-- <m_pagegation/> -->
   <view class="blank"></view>
 </view>
 <view>
