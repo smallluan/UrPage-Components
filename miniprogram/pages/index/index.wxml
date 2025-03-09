@@ -19,7 +19,7 @@
       </view>
     </view>
   </m_collapseGroup>
-  <m_imageChooser/>
+  <!-- <m_imageChooser/> -->
   <!-- <m_pagegation/> -->
   <view class="blank"></view>
 </view>

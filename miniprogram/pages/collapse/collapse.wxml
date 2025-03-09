@@ -49,6 +49,13 @@
       <text decode>&emsp;&emsp;{{ text }}</text>
     </view>
   </m_collapse>
+  <view class="main-title">三. 文章类</view>
+  <view class="sub-title">1. 查看全文</view>
+  <m_collapse mode="fade" cell="{{cell_1}}">
+    <view class="inner" slot="inner">
+      <text decode>&emsp;&emsp;{{ text }}</text>
+    </view>
+  </m_collapse>
   <view size="large" style="height: 300rpx;"></view>
 
 </view>

@@ -10,6 +10,7 @@
 
 <view class="{{cellClass}}" >
 	<m_cell 
+    wx:if="{{ mode === 'cell' }}"
 		bindtap="switchFold" 
 		description="{{cell.description}}" 
 		borderBottom="{{cell.borderBottom}}" 
@@ -27,6 +28,13 @@
 	style="--h: {{height}}px;--orgh: {{origHeight}};"  
 	class="{{collapseTableClass}}"
 >
+  <view wx:if="{{ mode === 'fade' }}" class="mask {{ fold ? '' : 'hide' }}">
+  <view class="unFold-op " bindtap="switchFold">
+    <t-icon name="chevron-{{ direction === 'top' ? 'up' : 'down' }}" />
+    <view >显示全文</view>
+  </view>
+    
+  </view>
 	<view id="slot">
 		<slot name="inner"></slot>
 	</view>

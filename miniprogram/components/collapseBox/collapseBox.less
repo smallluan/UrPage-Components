@@ -1,0 +1,62 @@
+@import "../utils/color.less";
+
+.table-fold,
+.table-unfold {
+  position: relative;
+	width: 100%;
+	transition: all ease-in-out .3s;
+	overflow: hidden;
+  background: white;
+}
+
+.table-fold {
+	height: var(--orgh);
+}
+
+.table-unfold {
+	height: var(--h);
+}
+
+.cell {
+	opacity: 1;
+}
+
+.cell-unfold {
+	opacity: 0.6;
+	transition: color ease-in-out .3s;
+}
+
+.arrow,
+.arrow-unfold {
+	font-size: 48rpx;
+	transition: all ease-in-out .3s;
+	color: gray;
+}
+
+.arrow-unfold {
+	transform: rotate(-180deg);
+}
+
+.mask {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: var(--orgh);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), white);
+}
+
+.unFold-op {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  color: @mainblue;
+}
+
+.hide {
+  // opacity: 0;
+  visibility: hidden;
+}

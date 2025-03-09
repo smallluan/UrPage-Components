@@ -28,6 +28,10 @@ Component({
     direction: {
       type: String,
       value: 'bottom'
+    },
+    mode: {
+      type: String,
+      value: 'cell'  // cell | fade
     }
   },
 
@@ -56,21 +60,24 @@ Component({
   methods: {
 
     setClass() {
-      let {fold, collapseTableClass, arrowClass, cellClass} = this.data;
+      let {fold, collapseTableClass, arrowClass, cellClass, origHeight, mode} = this.data;
       if(fold) {
         collapseTableClass = 'table-fold';
         arrowClass = 'arrow';
         cellClass = 'cell'
-      }
-      else {
+      } else {
         collapseTableClass = 'table-unfold';
         arrowClass = 'arrow-unfold';
         cellClass = 'cell-unfold'
       }
+      if (mode === 'fade') {
+        origHeight = '200rpx'
+      }
       this.setData({
         collapseTableClass: collapseTableClass,
         arrowClass: arrowClass,
-        cellClass: cellClass
+        cellClass: cellClass,
+        origHeight: origHeight
       })
     },
 

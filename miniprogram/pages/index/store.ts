@@ -211,6 +211,7 @@ export const getEachBasicList = () => {
       {
         title: 'Collaspse 折叠面板',
         url: '/pages/collapse/collapse',
+        label: 'update'
       },
       {
         title: 'pda 页面数据解析',

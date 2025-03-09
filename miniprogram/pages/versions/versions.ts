@@ -9,9 +9,15 @@ Page({
     },
     versions: [
       {
+        title: "v 2.1.1",
+        time: '2025-03-09 23:34:20',
+        detail: '更新 collapse 折叠面板，新增内容类 -> 单次展开',
+      },
+      {
         title: "v 2.1.0",
         time: '2025-01-30 19:10:34',
         detail: '搭建 urpage 小程序后端，基于 express 框架。由于本程序为演示性程序，故后端目前只负责静态资源托管',
+        icon: 'check',
         label: 'backend'
       },
       {

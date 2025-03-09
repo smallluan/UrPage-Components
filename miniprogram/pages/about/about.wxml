@@ -2,7 +2,7 @@
 
 <view class="_page">
   <view class="info-box">
-    <image src="http://www.think-bold.top/assets/avatar-C3qWQ9Fx.jpg" />
+    <image src="../../image/avatar.jpg" />
     <view class="basic-info">
       <view class="each-info" wx:for="{{ basicInfos }}">
         <view class="key">{{ item.key }} : </view>
