@@ -21,6 +21,13 @@
   </m_collapseGroup>
   <!-- <m_imageChooser/> -->
   <!-- <m_pagegation/> -->
+  <view class="sub-title">正在开发</view>
+  <m_cell title="图片选择器">
+    <view slot="right" class="label">30%</view>
+  </m_cell>
+  <m_cell title="分页器">
+    <view slot="right" class="label">40%</view>
+  </m_cell>
   <view class="blank"></view>
 </view>
 <view>
@@ -30,7 +37,7 @@
 <m_scrollTop wx:if="{{ showScrollTop }}" />
 
 
-<!-- <m_module content="" btn="confirm" show title="组件上新">
+<m_module content="" btn="confirm" show title="组件上新">
   <view style="margin-bottom: 20rpx;color: gray;">
     <m_link text="guide 用户指引" underLine icon url="/pages/guide/guide" />
   </view>
@@ -40,4 +47,4 @@
   <view style="margin-bottom: 20rpx;color: gray;">
     <m_link text="lazyImage 懒加载图片" underLine icon url="/pages/lazyimage/lazyimage" />
   </view>
-</m_module> -->
+</m_module>
