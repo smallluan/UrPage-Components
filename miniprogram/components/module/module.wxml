@@ -16,7 +16,7 @@
     id="inp"
 	/>
 	<!-- 输入框 end -->
-	<slot></slot>
+	<slot id="slot"></slot>
 	<!-- 按钮 start -->
 	<view class="comfirm" wx:if="{{btn === 'confirm'}}">
 		<m_button bindtap="close" content="知道了" size="large"/>

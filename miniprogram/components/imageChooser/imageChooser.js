@@ -54,6 +54,7 @@ Component({
 
   methods: {
     touchStart (e) {
+      // e.stopPropagation();
       const { clientX, clientY } = e.changedTouches[0]
       this.setData({
         startX: clientX,
@@ -79,6 +80,8 @@ Component({
       this.setData({ currentEle: id })
     },
     move (e) {
+      // e.stopPropagation();
+      e.preventDefault();
       if (this.data.isMoving) return
       this.setData({ isMoving: true })
       const { startX, startY, currentEle, elems, list } = this.data

@@ -95,7 +95,8 @@
     "m_timeLine": "components/timeLine/timeLine",
     "m_color": "components/colorChooser/colorChooser",
     "m_pagegation": "components/pagegation/pagegation",
-    "m_imageChooser": "components/imageChooser/imageChooser"
+    "m_imageChooser": "components/imageChooser/imageChooser",
+    "m_form": "components/form/form"
   },
   "tabBar": {
     "list": [

@@ -1,0 +1,9 @@
+<m_module 
+  id = "moduleRef"
+  wx:if = "{{ type === 'module' }}"
+  content = ""
+  title = "{{ template.title }}"
+  longText = "{{ moduleConfig.longText }}"
+>
+
+</m_module>
