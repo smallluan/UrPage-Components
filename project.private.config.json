@@ -3,6 +3,8 @@
   "projectname": "UrPage%20Components",
   "setting": {
     "compileHotReLoad": true,
-    "urlCheck": true
-  }
+    "urlCheck": true,
+    "autoAudits": false
+  },
+  "libVersion": "3.7.11"
 }

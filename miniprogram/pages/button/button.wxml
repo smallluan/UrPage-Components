@@ -3,13 +3,13 @@
   <view class="sub-title">1. 基础主题</view>
   <view class="flex-box">
     <view class="flex-item-3-left">
-      <m_button content="确认"/>
+      <m_button text="确认"/>
     </view>
     <view class="flex-item-3-center">
-      <m_button content="成功" theme="success" />
+      <m_button text="成功" theme="success" />
     </view>
     <view class="flex-item-3-right">
-      <m_button content="取消" theme="error" />
+      <m_button text="取消" theme="error" />
     </view>
   </view>
 
@@ -19,26 +19,26 @@
       <m_button theme="primary-light" content="确认"/>
     </view>
     <view class="flex-item-3-center">
-      <m_button content="成功" theme="success-light" />
+      <m_button text="成功" theme="success-light" />
     </view>
     <view class="flex-item-3-right">
-      <m_button content="取消" theme="error-light" />
+      <m_button text="取消" theme="error-light" />
     </view>
   </view>
 
   <view class="sub-title">3. 功能按钮</view>
   <view class="flex-box">
     <view class="flex-item-3-left">
-      <m_button shape="round" icon='search' content=""/>
+      <m_button shape="round" icon='search' text=""/>
     </view>
     <view class="flex-item-3-left">
-      <m_button content="搜索" icon="search" />
+      <m_button text="搜索" icon="search" />
     </view>
     <view class="flex-item-3-right">
-      <m_button content="加载中" loading />
+      <m_button text="加载中" loading />
     </view>
     <view style="margin-top: 20rpx;" class="flex-item-3-left">
-      <m_button disabled icon='app' content="禁用" />
+      <m_button disabled icon='app' text="禁用" />
     </view>
   </view>
 
@@ -46,35 +46,35 @@
   <view class="disc">a. 圆角</view>
   <view class="flex-box">
     <view class="flex-item-3-left">
-      <m_button theme="primary" shape="round" content="确认"/>
+      <m_button theme="primary" shape="round" text="确认"/>
     </view>
     <view class="flex-item-3-center">
-      <m_button content="成功" shape="round" theme="success" />
+      <m_button text="成功" shape="round" theme="success" />
     </view>
     <view class="flex-item-3-right">
-      <m_button content="取消" shape="round" theme="error" />
+      <m_button text="取消" shape="round" theme="error" />
     </view>
   </view>
   <view class="disc">b. 尺寸</view>
   <view class="flex-box">
-    <m_button theme="primary" size="large" content="确认"/>
+    <m_button theme="primary" size="large" text="确认"/>
   </view>
   <view class="flex-box">
-    <m_button theme="success" content="成功"/>
+    <m_button theme="success" text="成功"/>
   </view>
   <view class="flex-box">
-    <m_button theme="error" size="small" content="取消"/>
+    <m_button theme="error" size="small" text="取消"/>
   </view>
   <view class="disc">c. 自定义颜色</view>
   <view class="flex-box">
     <view class="flex-item-3-left">
-      <m_button bg="skyblue" color="white" theme='' content="天蓝色"/>
+      <m_button bg="skyblue" color="white" theme='' text="天蓝色"/>
     </view>
     <view class="flex-item-3-center">
-      <m_button bg="transparent" color="orangeed" theme='' content="透明色"/>
+      <m_button bg="transparent" color="orangeed" theme='' text="透明色"/>
     </view>
     <view class="flex-item-3-right">
-      <m_button bg="purple" content="紫色" theme='' />
+      <m_button bg="purple" text="紫色" theme='' />
     </view>
   </view>
 
