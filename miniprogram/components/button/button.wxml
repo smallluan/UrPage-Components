@@ -1,15 +1,16 @@
 <view
 	style="{{styles}}"
  	class="{{classes}} button"
-  catch:tap="buttonClick"
-  catch:longpress="buttonLongPress"
+  bind:tap="buttonClick"
+  bind:longpress="buttonLongPress"
 >
   <slot name="badge"></slot>
 	<t-icon 
     class="{{ loading ? 'loading-icon' : '' }}"
-    style="margin-right: {{text === '' ? '0rpx' : '12rpx'}}" 
     wx:if="{{(icon || loading) && size !== 'small'}}" 
     name="{{loading ? 'loading' : icon}}"
   />
- 	<text class="content">{{text}}</text>
+ 	<div class="content">
+    <slot></slot>
+  </div>
 </view>

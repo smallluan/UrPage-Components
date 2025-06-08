@@ -1,4 +1,11 @@
-<view style="--bg:{{bg}};--color:{{color}}" class="btn">		
-	<t-icon name="{{icon}}" class="icon"/>
-	<text wx:if="{{content}}">{{content}}</text>
+<view 
+	class="btn"
+>		
+	<m_button 
+		bind:click="buttonClick" 
+		shape="round" 
+		icon="{{ icon }}" 
+	>
+		<slot></slot>
+	</m_button>
 </view>

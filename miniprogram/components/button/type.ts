@@ -1,14 +1,6 @@
-import { 
-    PropertiesType, 
-    ComponentInterface 
-} from '../_basic/comp'
+import { ComponentInterface } from '../_basic/comp'
 
-export type Properties = PropertiesType & {
-    text: {
-        description?: '文字内容'
-        type: StringConstructor,
-        value: string | undefined,
-    },
+export type Properties = {
     icon: {
         description?: '图标名称',
         type: StringConstructor,
@@ -54,7 +46,9 @@ export type Properties = PropertiesType & {
 export interface ButtonInterface extends ComponentInterface {
     properties: Properties,
     methods: {
+        // 点击按钮
         buttonClick: (e: unknown) => void,
+        // 长按按钮
         buttonLongPress: (e: unknown) => void,
     }
 }

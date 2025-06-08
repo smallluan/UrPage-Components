@@ -14,5 +14,5 @@
 <m_skeleton type="interduce"/>
 <m_skeleton type="interduce"/>
 <m_skeleton type="interduce"/>
-<m_scrollTop content="回顶" wx:if="{{backtopShow}}"/>
+<m_fab isScrollTop icon="backtop" wx:if="{{backtopShow}}">回顶</m_fab>
 <view size="large" style="height: 300rpx;"></view>

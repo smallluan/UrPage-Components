@@ -2,9 +2,9 @@
  * 组件基类，实现了 ComponentInterface 接口，封装了组件的通用属性、方法和生命周期。
  */
 class MyComponent implements ComponentInterface {
-    // 组件选项配置，包含插槽支持和样式隔离设置
+    // 组件选项配置
     options: OptionsType;
-    // 组件属性，以键值对形式存储，每个值包含类型和描述信息
+    // 组件属性
     properties: PropertiesType;
     // 组件生命周期钩子
     lifetimes: LifetimesType;
@@ -15,26 +15,23 @@ class MyComponent implements ComponentInterface {
 
     /**
      * 构造函数，初始化组件的各项属性。
+     * 由于所有属性方法将在子类里面被重写，这里使用断言避免类型错误。
      */
     constructor() {
-        // 初始化组件选项，使用类型断言确保类型匹配
         this.options = {} as OptionsType;
-        // 初始化组件属性
         this.properties = {} as PropertiesType;
-        // 初始化组件数据
         this.data = {} as DataType;
-        // 初始化组件生命周期相关属性，设置默认的 setData 方法
         this.lifetimes = {
             setData: () => {},
             data: {},
             properties: {}
         } as LifetimesType;
-        // 初始化组件方法
+
         this.methods = {} as MethodsType;
     }
 
     /**
-     * 设置组件数据的方法，当前为空实现，可在子类中重写。
+     * 指向全局的 this 上的方法
      */
     setData() {}
 }
@@ -80,30 +77,30 @@ export type DataType = {
  */
 export type SetDataType = (
     // 要设置的数据对象，键来自 PropertiesType
-    obj: { [K in keyof PropertiesType]: any }
+    obj: { [K in keyof DataType]: any }
 ) => void;
 
 /**
  * 组件属性类型，支持泛型，可指定属性值的类型。
  */
-export type PropertiesType<T = unknown> = {
+export type PropertiesType = {
     // 任意字符串键对应一个包含描述、类型和值的对象
     [key: string]: {
         // 属性描述，可选
         description?: string;
         // 属性类型
-        type: T;
+        type: unknown;
         // 属性值
-        value: T;
+        value: unknown;
     };
 };
 
 /**
  * 组件方法类型，定义了方法以键值对形式存储，每个值为返回 unknown 类型的函数。
  */
-export type MethodsType = {
+export type MethodsType = DataType & {
     // 任意字符串键对应一个返回 unknown 类型的函数
-    [key: string]: () => unknown;
+    [key: string]: (...args: Array<unknown>) => unknown;
 };
 
 /**

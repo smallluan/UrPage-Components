@@ -9,10 +9,11 @@
 			<m_button 
 				bindtap="btnClick" 
 				data-id="{{index}}" 
-				content="{{item.content}}" 
 				theme="{{item.theme}}"
 				size="large"
-			/>
+			>
+			{{ item.content }}
+			</m_button>
 		</view>
 		<slot wx:if="{{type === 'slot'}}" name="innerAction"></slot>
 	</view>

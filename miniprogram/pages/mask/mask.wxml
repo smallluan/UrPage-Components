@@ -9,7 +9,7 @@
 	<view class="sub-title"></view>
 	<view class="flex-box">
 		<view class="flex-item-1-center">
-			<m_button bindtap="onTap" data-d="bottom" content="显示遮罩层" size="large" />
+			<m_button bindtap="onTap" data-d="bottom" size="large">显示遮罩层</m_button>
 		</view>
 	</view>
 </view>

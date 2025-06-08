@@ -86,7 +86,6 @@
     "m_input": "components/input/input",
     "m_textarea": "components/textArea/textArea",
     "m_fab": "components/fab/fab",
-    "m_scrollTop": "components/scrollTop/scrollTop",
     "m_slider": "components/slider/slider",
     "m_message": "components/message/message",
     "m_rate": "components/rate/rate",

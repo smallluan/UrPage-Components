@@ -9,6 +9,13 @@ Page({
     },
     versions: [
       {
+        title: "v 2.2.0",
+        time: '2025-06-08 11:57:43',
+        detail: '着手开始面向对象重构，删除 scroll_top 组件，使用 fab 组件接替它的功能，fab 组件继承自 button 组件。解决了 action 组件向右偏移的问题。',
+        icon: 'check',
+        label: 'rebuild'
+      },
+      {
         title: "v 2.1.1",
         time: '2025-03-09 23:34:20',
         detail: '更新 collapse 折叠面板，新增内容类 -> 单次展开',

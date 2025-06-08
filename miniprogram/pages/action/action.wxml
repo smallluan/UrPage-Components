@@ -5,11 +5,11 @@
   <view class="main-title">点击按钮</view>
 <view class="sub-title">1. 选项面板</view>
 <view style="display: flex;justify-content: center;">
-	<m_button size="large" content="选项面板" bindtap="change_1" />
+	<m_button size="large" bindtap="change_1">选项面板</m_button>
 </view>
 <view class="sub-title">2. 自定义面板</view>
 <view style="display: flex;justify-content: center;">
-	<m_button size="large" content="自定义面板" bindtap="change_2" />
+	<m_button size="large" bindtap="change_2">自定义面板</m_button>
 </view>
 <m_module content="{{content}}" show="{{showModule}}" />
 <m_actions btns="{{list}}" show="{{show_1}}" bindbtnTap="actionBtnTap"/>

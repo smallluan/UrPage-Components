@@ -1,10 +1,6 @@
 import { Properties } from './type'
 
 const properties: Properties = {
-  text: {
-    type: String,
-    value: ''
-  },
   icon: {
     type: String,
     value: '',

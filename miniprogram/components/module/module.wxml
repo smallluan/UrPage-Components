@@ -19,11 +19,11 @@
 	<slot id="slot"></slot>
 	<!-- 按钮 start -->
 	<view class="comfirm" wx:if="{{btn === 'confirm'}}">
-		<m_button bindtap="close" content="知道了" size="large"/>
+		<m_button bindtap="close" size="large">知道了</m_button>
 	</view>
 	<view class="concel" wx:if="{{btn === 'concel'}}">
-		<m_button bindtap="cancle" theme="primary-light" content="取消"/>
-		<m_button bindtap="confirm" content="确认"/>
+		<m_button bindtap="cancle" theme="primary-light">取消</m_button>
+		<m_button bindtap="confirm">确认</m_button>
 	</view>
 	<!-- 按钮 end -->
 </view>

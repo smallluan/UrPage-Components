@@ -6,17 +6,17 @@
       <view class="content">{{ currentNode.item.content }}</view>
       <view class="flex-box btn " wx:if="{{ current !== nodes.length - 1 }}">
         <view class="flex-item-3-left">
-          <m_button size="small" bindtap="finish" theme="primary-light" content="跳过" />
+          <m_button size="small" bindtap="finish" theme="primary-light">跳过</m_button>
         </view>
         <view class="flex-item-3-center">
-          <m_button size="small" bindtap="back" content="返回" />
+          <m_button size="small" bindtap="back">返回</m_button>
         </view>
         <view class="flex-item-3-right">
-          <m_button size="small" bindtap="next" content="继续" />
+          <m_button size="small" bindtap="next">继续</m_button>
         </view>
       </view>
       <view class="flex-item-1-center">
-        <m_button size="large" content="完成" bindtap="finish" wx:if="{{ current === nodes.length - 1 }}" />
+        <m_button size="large" bindtap="finish" wx:if="{{ current === nodes.length - 1 }}">完成</m_button>
       </view>
     </view>
   </view>

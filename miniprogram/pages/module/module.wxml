@@ -19,7 +19,7 @@
       <view class="sub-title">{{ index + 1 }}. {{ item }}</view>
     </view>
     <view class="flex-item-2-right">
-      <m_button bindtap="show_{{ index + 1 }}" slot="right" content="点击弹出"/>
+      <m_button bindtap="show_{{ index + 1 }}" slot="right">点击弹出</m_button>
     </view>
   </view>
   <view class="disc">为了避免开发者在<text class="lineCode">无按钮时未添加其他关闭方式</text>导致窗口无法关闭的情况，该组件右上角的关闭图标未提供隐藏接口。</view>

@@ -9,32 +9,32 @@
   <view class="main-title">一. 基础通知</view>
   <view class="sub-title">1. 5s 后自动消失</view>
   <view style="display: flex;justify-content: center;">
-    <m_button size="large" content="5秒后消失" bindtap="show_1" />
+    <m_button size="large" bindtap="show_1">5秒后消失</m_button>
   </view>
 
   <view class="sub-title">2. 可手动关闭，5s 后自动消失</view>
   <view style="display: flex;justify-content: center;">
-    <m_button size="large" content="可手动关闭" bindtap="show_2" />
+    <m_button size="large" bindtap="show_2">可手动关闭</m_button>
   </view>
 
   <view class="sub-title">3. 携带链接的消息</view>
   <view style="display: flex;justify-content: center;">
-    <m_button size="large" content="带链接的消息" bindtap="show_3" />
+    <m_button size="large" bindtap="show_3">带链接的消息</m_button>
   </view>
 
   <view class="main-title">二. 类型通知</view>
   <view class="sub-title">1. 成功主题提示</view>
   <view style="display: flex;justify-content: center;">
-    <m_button bg="#2ba471" size="large" content="成功主题提示" bindtap="show_4" />
+    <m_button bg="#2ba471" size="large" bindtap="show_4">成功主题提示</m_button>
   </view>
 
   <view class="sub-title">2. 错误主题提示</view>
   <view style="display: flex;justify-content: center;">
-    <m_button bg="#d54941" size="large" content="错误主题提示" bindtap="show_5" />
+    <m_button bg="#d54941" size="large" bindtap="show_5">错误主题提示</m_button>
   </view>
 
   <view class="sub-title">3. 警告主题提示</view>
   <view style="display: flex;justify-content: center;">
-    <m_button bg="#e37318" size="large" content="警告主题提示" bindtap="show_6" />
+    <m_button bg="#e37318" size="large" bindtap="show_6">警告主题提示</m_button>
   </view>
 </view>

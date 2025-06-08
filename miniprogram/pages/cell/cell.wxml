@@ -14,7 +14,7 @@
   </m_cell>
   <view class="sub-title">4. 右侧插槽自定义</view>
   <m_cell leftIcon="app"  title="插槽单元格">
-    <m_button slot="right" content="确认" size="small" />
+    <m_button slot="right" size="small">确认</m_button>
   </m_cell>
   <m_cell leftIcon="app"  title="插槽单元格">
     <m_switch slot="right" size="small" />
